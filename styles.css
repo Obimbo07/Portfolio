@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+} 
+
+/* Navigation */
+
+nav {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  background-color: #3c3a39;
+}
+
+.logo-container {
+  position: absolute;
+  padding-top: 16px;
+  left: 142px;
+}
+#logo {
+  color: aliceblue;
+}
+
+.nav-links {
+  position: absolute;
+  left: 70%;
+  top: 16;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+.navlinks {
+  padding: 7px;
+  color: aliceblue;
+  cursor:progress;
+
+}
+
+.section {
+ background-color: #030302;
+ position: absolute;
+ top: 72px;
+ width: 100%;
+ height: 798px;
+}
+
+.container{
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(img/Illustration-header@2x.png);
+  background-position-y: 185px;
+  background-attachment: fixed;
+  background-size: 40%;
+  background-position: right bottom;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.headline {
+  position: absolute;
+  left: 143px;
+  width: 566px;
+  height: 739px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 192px 0px; 
+  gap: 24px;
+  
+}
+
+#myName {
+  width: 566px;
+  height: 160px;
+  color: #F55800;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+
+}
+
+#title {
+  
+  width: 566px;
+  color: aliceblue;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+#description {
+  width: 566px;
+  color: aliceblue;
+}
+
+.flex-socials {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 92%;
+  top: 37%
+}
+
+.iconsSection {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+  align-items: center;
+  gap: 1.5em;
+  
+}
+
+@media(min-width: 768px) {
+
+.navlinks {
+  left: 50%;
+}
+}
+
+@media (max-width: 375px) {
+  .container {
+    background-color: #F55800;
+  }
+}
