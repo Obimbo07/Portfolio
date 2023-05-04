@@ -11,6 +11,11 @@
 /* Navigation */
 header {
   background-color: #3c3a39;
+  height: 48px;
+  width: 375px;
+  left: 0;
+  top: 44px;
+  border-radius: 0;
 }
 
 nav {
@@ -22,16 +27,22 @@ nav {
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding-top: 7.6%;
-  padding-left: 6%;
-  background-color: #3c3a39;
-  width: fit-content;
+  height: 44px;
+  width: 94px;
+  left: 12px;
+  top: 2px;
+  border-radius: 0;
+  padding: 10px 12px 10px 12px;
 }
 
 #logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
   color: #fff;
 }
 
@@ -45,7 +56,6 @@ nav {
 }
 
 #ham {
-  padding: 6.5%;
   position: absolute;
   left: 83%;
   top: 1%;
@@ -53,66 +63,85 @@ nav {
 }
 
 .section {
-  background-color: #030302;
+  background-color: #1c1a19;
   width: 100%;
-  height: 100%;
+  height: 590px;
   position: absolute;
-  background-image: url(img/Illustration-header@2x.png);
+}
+
+.container {
+  background-color: #1c1a19;
+  height: 590px;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  background-image: url(img/illustration-header-mobile.png);
   background-attachment: fixed;
-  background-size: 64%;
+  background-size: 46.9%;
+  background-position-y: 185px;
   background-position: right bottom;
-  background-position-y: 97%;
-  background-position-x: 179%;
-  padding-top: 10%;
   flex-grow: 1;
   background-repeat: no-repeat;
 }
 
-.container {
-  height: 100%;
-}
-
 #myName {
-  width: 100%;
-  color: #f55800;
-  font-family: "Crete Round", sans-serif;
+  width: 327px;
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 350%;
+  font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  padding-top: 15%;
+  padding-top: 25%;
   padding-left: 5%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 #title {
-  width: 100%;
-  color: aliceblue;
-  font-family: 'Roboto', sans-serif;
+  width: 327px;
+  color: #fff5e1;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   align-items: center;
   padding-left: 5%;
-  padding-top: 5%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 #description {
-  width: 100%;
-  color: aliceblue;
+  width: 327px;
+  height: 123px;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   padding-left: 5%;
-  padding-top: 5%;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .flex-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 40px;
   padding-left: 5%;
-  padding-top: 8%;
+  padding-top: 10%;
+  order: 3;
+  flex-grow: 0;
 }
 
 .iconsSection {
@@ -122,25 +151,9 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .section {
-    background-color: #030302;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(img/Illustration-header@2x.png);
-    background-attachment: fixed;
-    background-size: 50%;
-    background-position: right bottom;
-    background-position-y: 20%;
-    background-position-x: 100%;
-    padding-top: 1%;
-    flex-grow: 1;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: 375px) {
-  .container {
-    background-color: #140b05;
+  .iconsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 21em;
   }
 }
