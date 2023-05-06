@@ -12,7 +12,7 @@
 header {
   background-color: #3c3a39;
   height: 48px;
-  width: 375px;
+  width: 100%;
   left: 0;
   top: 44px;
   border-radius: 0;
@@ -153,7 +153,7 @@ nav {
 }
 
 .works {
-  background-color: #e5e5e5;
+  background-color: #fff;
   position: absolute;
   top: 86%;
   width: 100%;
@@ -163,9 +163,9 @@ nav {
   padding-top: 120px;
   left: 24px;
   width: 327px;
-  border-bottom: #1c1a19;
+  border-bottom: #212121;
   position: relative;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
 }
 
@@ -175,12 +175,14 @@ nav {
   font-size: 40px;
   font-weight: 400;
   line-height: 52px;
+  padding-bottom: 29px;
   text-align: left;
 }
 
 #grid-container {
   height: 3028px;
-  padding-top: 15%;
+  width: 100%;
+  padding-top: 7%;
   position: relative;
   display: grid;
   grid-template-rows: 174px;
@@ -188,7 +190,8 @@ nav {
 
 .recent-project {
   position: relative;
-  height: 568px;
+  height: 533px;
+  width: 375px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -207,15 +210,17 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   height: 307px;
-  width: inherit;
+  margin-right: 47px;
 }
 
 .title-post {
+  width: 100%;
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
   text-align: left;
+  height: 36px;
   color: #091e42;
 }
 
@@ -226,19 +231,22 @@ nav {
   line-height: 24px;
   size: 16px;
   text-align: left;
+  color: #091e42;
+  padding-bottom: 10px;
 }
 
 .tech-skills {
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 8%;
   height: 40px;
   width: 70%;
   align-items: center;
 }
 
 .skillset {
-  border: 1px solid #8993a4;
+  border: 1px 'solid' #8993a4;
+  color: #091e42;
   box-sizing: border-box;
   padding: 10px;
 }
@@ -246,16 +254,17 @@ nav {
 .project-view {
   height: 48px;
   font-family: 'Inter', sans-serif;
+  color: #fff;
   width: 124px;
   padding: 12px;
   position: inherit;
   top: 8%;
+  border: 0;
   background-color: #ff6b00;
 }
 
 .cards-box {
   height: 2436px;
-  width: 327px;
   top: 385px;
   padding: 0 24px 0 24px;
   order: 1;
@@ -272,8 +281,8 @@ nav {
   background-image: url(img/Img-Placeholder1.png);
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding-top: 40%;
+  gap: 26px;
+  padding-top: 22%;
   text-align: inherit;
   text-decoration: #fff;
   margin-left: 1px;
@@ -283,12 +292,15 @@ nav {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 34px;
   letter-spacing: 0;
   text-align: left;
   color: #fff;
-  padding-left: 9%;
+  padding-left: 3%;
+  padding-right: 3%;
   position: relative;
+  gap: 13%;
+  display: flex;
 }
 
 .card-description {
@@ -297,7 +309,8 @@ nav {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 9%;
+  padding-left: 3%;
+  padding-right: 3%;
   color: #fff;
 }
 
@@ -313,7 +326,8 @@ nav {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  text-decoration: #fff;
+  color: #fff;
+  border: 0;
 }
 
 .card-techskills {
@@ -321,23 +335,30 @@ nav {
   flex-direction: row;
   gap: 10%;
   height: 40px;
-  padding-left: 9%;
+  padding-left: 3%;
   width: 70%;
   align-items: center;
 }
 
 .card-skillset {
   background: rgba(255, 255, 255, 0.24);
+  color: #fff;
   box-sizing: border-box;
   padding: 10px;
 }
 
 .about {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 1801px;
   top: 528%;
-  background: #1c1a19;
+  background-color: #1c1a19;
+  background-image: url(img/Frame.png);
+  background-attachment: scroll;
+  background-size: 41.9%;
+  background-position-y: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
 }
 
 .about-me {
@@ -355,14 +376,19 @@ nav {
   font-weight: 400;
   line-height: 88px;
   letter-spacing: 0.37px;
-  text-align: left;
   color: #ff6b00;
 }
 
 .about-text {
-  height: 130px;
+  height: 148px;
   width: 327px;
   color: #f4f5f7;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 .resume {
@@ -383,13 +409,6 @@ nav {
   border: none;
 }
 
-.about-img {
-  height: 258px;
-  position: absolute;
-  left: 57%;
-  top: 18%;
-}
-
 .divider {
   color: #fff;
   position: relative;
@@ -401,39 +420,35 @@ nav {
 
 .profession-tools {
   height: 1080px;
-  width: 329px;
+  width: 100%;
   position: absolute;
-  left: 23px;
   top: 4580px;
   padding: 120px 24px 38px 24px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
-.tools-layout {
-  height: 281px;
-  width: 225px;
-  left: 51px;
-  top: 120px;
-  position: absolute;
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.listtopography {
   display: flex;
   flex-direction: column;
+}
+
+.header-list {
+  flex-direction: row;
+  align-self: center;
   align-items: center;
-  gap: 24px;
-  flex: none;
-}
-
-.toolsTitle {
-  height: 41px;
-  width: 225px;
-  padding: 8px 12px 8px 12px;
-  color: #fff;
-  font-family: 'InaiMathi', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
   display: flex;
-  gap: 10px;
+  color: #fff;
+  gap: 7%;
+  width: 225.46px;
+  height: 41.46px;
 }
 
 #titles {
@@ -441,38 +456,151 @@ nav {
   height: 18px;
 }
 
-.tools-details {
+#language {
+  font-style: 'InaiMathi';
+  padding-left: 4%;
+}
+
+#frameworks {
+  font-style: 'Inter';
+  padding-left: 4%;
+}
+
+#skills {
+  font-style: 'Inter';
+  padding-left: 17%;
+}
+
+.detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 99%;
+  font-weight: 100;
   line-height: 52px;
   text-align: center;
   color: #fff;
 }
 
-.frameworks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  width: 281px;
-  height: 280px;
-}
-
-.tools-layout3 {
-  height: 336px;
-  width: 267px;
-  left: 31px;
-  top: 729px;
-}
-
 @media (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  #myName {
+    padding-top: 2%;
+    width: 56%;
+  }
+
+  .container {
+    width: 100%;
+    position: absolute;
+    left: 12%;
+    bottom: 18%;
+    top: 20%;
+    background-image: url(img/Illustration-header.svg);
+    background-attachment: fixed;
+    background-size: 30%;
+    background-position-y: 100px;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .flex-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    padding-left: 5%;
+    padding-top: 10%;
+    order: 3;
+    flex-grow: 0;
+  }
+
   .iconsSection {
     display: flex;
     flex-direction: column;
-    gap: 21em;
+    align-content: center;
+    position: absolute;
+    top: 21%;
+    right: 102%;
+    width: 3%;
+  }
+
+  .about {
+    background-image: url(img/Frame1.png);
+    height: 1500px;
+    top: 362%;
+  }
+
+  .profession-tools {
+    top: 443%;
+    padding-top: 0;
+  }
+
+  .tools-lists {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15%;
+    padding: 130px 0;
+  }
+
+  .recent-project {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right-block {
+    position: relative;
+    padding-top: 3%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 307px;
+    margin-right: 47px;
+  }
+
+  .project-img {
+    width: 212%;
+    height: 67%;
+    left: 4.15%;
+  }
+
+  #grid-container {
+    height: max-content;
+  }
+
+  .cards-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    height: max-content;
+  }
+
+  .card-works {
+    left: 24px;
+    background-image: url(img/Img-Placeholder1.png);
+    display: flex;
+    flex-direction: column;
+    padding-top: 9%;
+    text-align: inherit;
+    text-decoration: #fff;
+    margin-left: 1px;
+  }
+
+  .tools-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12%;
   }
 }
