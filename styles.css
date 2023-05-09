@@ -485,6 +485,56 @@ nav {
   color: #fff;
 }
 
+.contact {
+  background-color: #fff;
+  background-size: 100%;
+  position: absolute;
+  top: 686%;
+  width: 100%;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+}
+
+.contact-section {
+  width: 327px;
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #172b4d;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+}
+
+input {
+  border: transparent;
+  border-bottom: #dbd8d7;
+  border-bottom: 5px;
+}
+
+.submit-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 10px;
+  background-color: #ff6b00;
+}
+
 @media (min-width: 768px) {
   header {
     width: 100%;
