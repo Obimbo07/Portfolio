@@ -526,7 +526,8 @@ fieldset {
   gap: 20px;
 }
 
-#full-name, #email {
+#full-name,
+#email {
   width: 100%;
   padding-bottom: 10px;
   border-bottom-color: #dbd8d7;
@@ -590,7 +591,6 @@ hr {
   padding-bottom: 0;
   margin-bottom: 11px;
 }
-
 
 @media (min-width: 768px) {
   header {
@@ -694,7 +694,6 @@ hr {
     gap: 5%;
   }
 }
-
 
 @media (min-width: 1400px) {
   .profession-tools {
