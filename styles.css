@@ -488,7 +488,7 @@ nav {
 .contact {
   background-size: 100%;
   position: absolute;
-  top: 670%;
+  top: 695%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -526,7 +526,7 @@ fieldset {
   gap: 20px;
 }
 
-#full-name #email {
+#full-name, #email {
   width: 100%;
   padding-bottom: 10px;
   border-bottom-color: #dbd8d7;
@@ -591,6 +591,7 @@ hr {
   margin-bottom: 11px;
 }
 
+
 @media (min-width: 768px) {
   header {
     width: 100%;
@@ -642,10 +643,6 @@ hr {
     background-position-x: 100%;
   }
 
-  .profession-tools {
-    padding-top: 0;
-  }
-
   .tools-lists {
     display: flex;
     flex-direction: row;
@@ -660,17 +657,6 @@ hr {
     height: max-content;
     display: flex;
     flex-direction: row;
-  }
-
-  .right-block {
-    position: relative;
-    padding-top: 3%;
-    padding-left: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 307px;
-    margin-right: 47px;
   }
 
   .project-img {
@@ -709,13 +695,26 @@ hr {
   }
 }
 
+
 @media (min-width: 1400px) {
   .profession-tools {
-    top: 545%;
+    top: 600%;
     padding-top: 0;
   }
 
   .cards-box {
     display: flex;
+  }
+
+  .contact {
+    background-size: 100%;
+    position: absolute;
+    top: 695%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
   }
 }
