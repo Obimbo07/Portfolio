@@ -365,7 +365,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 69px 24px;
+  padding: 50px 24px;
   gap: 58px;
 }
 
@@ -405,8 +405,12 @@ fieldset {
 
 #mess {
   margin-top: 12px;
+  border: none;
   width: 100%;
   background: #fbf8f7;
+  font-style: italic;
+  color: #3C3a39;
+  padding: 10px;
 }
 
 .Submit-btn {
@@ -427,13 +431,15 @@ fieldset {
 .form-breaker {
   background: #dfe1e6;
   width: 100%;
+  margin: 24px 0;
 }
 
 .footer {
-  margin: 0 22%;
+  margin: 10% 22%;
 }
 
 .footerIcons {
+  color: #505f79;
   display: flex;
   flex-direction: row;
   align-items: baseline;
