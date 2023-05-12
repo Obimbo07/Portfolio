@@ -567,18 +567,12 @@ fieldset {
     color: #091e42;
   }
 
-  .cardworks,
   .card-btn {
     display: none;
   }
 
-  .card-works:hover,
-  .card-btn {
+  .card-works:hover .card-btn {
     display: block;
-    height: 48px;
-    background: #ff6b00;
-    color: #fff;
-    border: none;
   }
 
   .card-works:hover h2,
@@ -641,6 +635,7 @@ fieldset {
   .contact-section {
     height: auto;
     width: 445px;
+    margin-left: 2%;
   }
 
   .contact-text {
@@ -670,7 +665,7 @@ fieldset {
   }
 
   .footer {
-    margin: 1% 32% 1%  10%;
+    margin: 1% 20% 1%  10%;
   }
 
   .footer-breaker {
