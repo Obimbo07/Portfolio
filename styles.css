@@ -44,6 +44,10 @@ header {
   display: block;
 }
 
+.nav-link {
+  display: none;
+}
+
 #ham {
   cursor: pointer;
   margin-right: 14px;
@@ -237,6 +241,7 @@ header {
 }
 
 .card-btn {
+  display: transparent;
   height: 48px;
   background: #ff6b00;
   color: #fff;
@@ -454,4 +459,180 @@ fieldset {
   top: 21px;
   border-radius: 10px;
   margin: auto 27%;
+}
+
+@media (min-width: 768px) {
+  .hamberger-btn {
+    display: none;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    gap: 3%;
+  }
+
+  .navbtn {
+    padding: 5%;
+  }
+
+  nav {
+    margin-right: 11%;
+  }
+
+  .inbox {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+  }
+
+  .banner-section {
+    background-image: url(img/Illustration-header@2x.png);
+    background-size: 40%;
+  }
+
+  .container {
+    width: 327px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 12%;
+  }
+
+  .socials {
+    position: absolute;
+    left: 7%;
+  }
+
+  .iconsSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recent-works {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .works-break {
+    width: 76%;
+  }
+
+  .grid-container {
+    display: grid;
+  }
+
+  .recent-project {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cards-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card-btn {
+    display: none;
+  }
+
+  .card-btn:hover {
+    display: block;
+  }
+
+  .card-btn:hover {
+    height: 48px;
+    background: #ff6b00;
+    color: #fff;
+    border: none;
+  }
+
+  .card-works:hover h2,
+  .card-works:hover p {
+    color: transparent;
+  }
+
+  .card-works:hover ul {
+    display: none !important;
+  }
+
+  .about {
+    border-radius: 0;
+    padding: 130px 0 130px 0;
+    background-image: url(img/Frame1.png);
+    background-position-y: 14%;
+    background-size: 48%;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 130px 0;
+    gap: 24px;
+    width: 44%;
+    margin-left: 7%;
+  }
+
+  .about-breaker {
+    margin-top: 6%;
+  }
+
+  .tools-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 39%;
+    margin-right: 34%;
+    margin-top: 11%;
+  }
+
+  .listtopography {
+    width: fit-content;
+  }
+
+  .bottom-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-section {
+    height: 10%;
+  }
+
+  .contact-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .footerIcons {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer {
+    margin: 1% 22%;
+  }
+
+  .footer-breaker {
+    display: none;
+  }
 }
