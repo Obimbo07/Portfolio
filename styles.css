@@ -512,26 +512,42 @@ fieldset {
   }
 
   .recent-works {
-    width: 94%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
     align-items: center;
   }
 
   .works-break {
-    width: 76%;
+    width: 68%;
+    margin-right: 3%;
   }
 
-  .grid-container {
+  #works-title {
+    margin-left: 4%;
+  }
+
+  #grid-container {
     display: grid;
+  }
+
+  .project-img {
+    width: 67%;
   }
 
   .recent-project {
     display: flex;
     flex-direction: row;
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+
+  .right-block {
+    height: fit-content;
+    width: min-content;
+    gap: 27px;
   }
 
   .cards-box {
@@ -541,11 +557,23 @@ fieldset {
     gap: 10px;
   }
 
+  .posts-description {
+    width: 173%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+  }
+
+  .cardworks,
   .card-btn {
     display: none;
   }
 
-  .card-btn:hover {
+  .card-works:hover,
+  .card-btn {
     display: block;
     height: 48px;
     background: #ff6b00;
@@ -581,14 +609,15 @@ fieldset {
   }
 
   .about-breaker {
-    margin-top: 6%;
+    margin: 5% 57% 5% 6%;
+    width: 87%;
   }
 
   .tools-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 39%;
+    gap: 30%;
     margin-right: 34%;
     margin-top: 11%;
   }
@@ -597,13 +626,21 @@ fieldset {
     width: fit-content;
   }
 
+  .mini-list {
+    width: max-content;
+    display: flex;
+    align-items: flex-start;
+  }
+
   .bottom-footer {
     display: flex;
     flex-direction: row;
+    gap: 0;
   }
 
   .contact-section {
-    height: 10%;
+    height: auto;
+    width: 445px;
   }
 
   .contact-text {
@@ -616,7 +653,14 @@ fieldset {
   }
 
   form {
-    width: 100%;
+    width: 50%;
+    margin: 0;
+  }
+
+  .form,
+  .Submit-btn {
+    margin-left: 0;
+    margin-top: 24px;
   }
 
   .footerIcons {
@@ -626,7 +670,7 @@ fieldset {
   }
 
   .footer {
-    margin: 1% 22%;
+    margin: 1% 32% 1%  10%;
   }
 
   .footer-breaker {
