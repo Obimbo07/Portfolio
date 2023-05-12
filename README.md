@@ -69,15 +69,9 @@
 ### Setup
 
  - open the terminal window 
- - run ```git clone https://github.com/Obimbo07/portfolio-mobile-first.git```
- - run ```cd portfolio-mobile-first```
+ - run ```git clone https://github.com/Obimbo07/Portfolio-mobileFirst.git```
+ - run ```cd Portfolio-mobilefirst```
  - open index.html
-
-### Prerequisites <a name="prerequisites"></a>
-
-- [Lastest Version of Node JS and NPM](www.nodejs.com)
-- Install [Git](www.github.com)
-- A compatible browser. We recommend Chrome, Safari, Edge and Firefox >5.0 and above
 
 
 ### Usage <a name="usage"> </a>
@@ -90,7 +84,7 @@ To run the project, execute the following command:
 You can deploy this project by:
 -  Copying the project files to the deploynennt environment
 -  Running the index.html
-<p align ="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors 
  👤 **Austin Obimbo**
