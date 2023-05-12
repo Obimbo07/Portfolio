@@ -547,9 +547,6 @@ fieldset {
 
   .card-btn:hover {
     display: block;
-  }
-
-  .card-btn:hover {
     height: 48px;
     background: #ff6b00;
     color: #fff;
