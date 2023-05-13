@@ -466,6 +466,20 @@ fieldset {
     display: none;
   }
 
+  #logo {
+    animation: rotate 1s ease-in-out forwards;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   .nav-link {
     display: flex;
     flex-direction: row;
@@ -574,7 +588,7 @@ fieldset {
 
   .card-btn:hover {
     background-color: rgb(221, 137, 10);
-  } 
+  }
 
   .card-works:hover .card-btn {
     display: block;
