@@ -569,7 +569,12 @@ fieldset {
 
   .card-btn {
     display: none;
+    transition: background-color 0.5s ease;
   }
+
+  .card-btn:hover {
+    background-color: rgb(221, 137, 10);
+  } 
 
   .card-works:hover .card-btn {
     display: block;
