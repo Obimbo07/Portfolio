@@ -83,7 +83,7 @@ To run the project, execute the following command:
 
 You can deploy this project by:
 -  Copying the project files to the deploynennt environment
--  Running the index.html
+- Evaluated environment url: https://obimbo07.github.io/Portfolio-mobileFirst/
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors 
