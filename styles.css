@@ -611,13 +611,12 @@ fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30%;
-    margin-right: 34%;
+    gap: 21%;
     margin-top: 11%;
   }
 
   .listtopography {
-    width: fit-content;
+    width: 50%;
   }
 
   .mini-list {
