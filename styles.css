@@ -29,7 +29,6 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  size: 18px;
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
@@ -241,7 +240,7 @@ header {
 }
 
 .card-btn {
-  display: transparent;
+  opacity: 0;
   height: 48px;
   background: #ff6b00;
   color: #fff;
@@ -545,7 +544,6 @@ fieldset {
   }
 
   .right-block {
-    height: fit-content;
     width: min-content;
     gap: 27px;
   }
@@ -611,12 +609,13 @@ fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 21%;
+    gap: 30%;
+    margin-right: 34%;
     margin-top: 11%;
   }
 
   .listtopography {
-    width: 50%;
+    width: fit-content;
   }
 
   .mini-list {
