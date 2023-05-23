@@ -25,6 +25,9 @@ header {
   padding: 10px 12px 10px 12px;
 }
 
+.menu-dissapear {
+  display: none;
+}
 #logo {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
