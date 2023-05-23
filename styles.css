@@ -28,6 +28,7 @@ header {
 .menu-dissapear {
   display: none;
 }
+
 #logo {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
@@ -628,12 +629,12 @@ fieldset {
     transition: background-color 0.5s ease;
   }
 
-  .card-works:hover .card-btn {
-    display: block;
-  }
-
   .card-btn:hover {
     background-color: rgb(221, 137, 10);
+  }
+
+  .card-works:hover .card-btn {
+    display: block;
   }
 
   .card-works:hover h2,
