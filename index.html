@@ -7,20 +7,25 @@
         <meta name="author" content="Austin">
         <link rel="stylesheet" type="text/css" href="styles.css"> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
-        <link rel="stylesheet" href="index.js"/>
-         
     </head>
     <body>
         <header>
           <div class="logo-container">
-            <a href=""><h3 id="logo">My Logo</h3></a>
+            <a href="#"><h3 id="logo">My Logo</h3></a>
+          </div>
+          <div class="drop-down" id="navMenu">
+            <ul class="dropdown-menu">
+             <h1 aria-hidden="true" id="menu-close" onclick="closeMenu()">X</h1>
+             <a href="#Home"><li class="menu-link">Portfolio</li> </a>
+             <a href="#About"><li class="menu-link">About</li> </a>
+             <a href="#Contact"><li class="menu-link">Contact</li> </a>
+            </ul>
           </div>
           <nav>
-            <label for="check" onClick="navClick()"  class="hamberger-btn">
-            <img id="ham" href="#" src="img/IconMenu.png">
+            <label class="hamberger-btn" >
+            <img class="hamberger" id="ham" onclick="openMenu()" src="img/IconMenu.png">
             </label>
             <ul class="nav-link">
-              <p id="close-nav">X</p>
               <li class="navbtn">Portfolio</li>
               <li class="navbtn">About</li>
               <li class="navbtn">Contact</li>
@@ -28,14 +33,7 @@
             </ul>
           </nav>
         </header>
-        <div class="drop-down">
-          <ul class="dropdown-menu">
-            <li class="menu-link">Portfolio</li>
-            <li class="menu-link">About</li>
-            <li class="menu-link">Contact</li>
-          </ul>
-        </div>
-        <section class="banner-section">
+        <section class="banner-section" id="Home">
             <div class="container">
                 <h1 id="myName">
                     Hey There.
@@ -151,7 +149,7 @@
             </div>
         </div>
        </section>
-       <section class="about">
+       <section class="about" id="About">
         <div class="about-me">
             <h2 class="about-title">About me</h2>
             <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -200,7 +198,7 @@
               </ul>
           </div>
        </section>
-       <section class="bottom-footer">
+       <section class="bottom-footer" id="Contact">
            <div class="contact-section">
               <p class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
            </div>
@@ -240,5 +238,6 @@
             </ul>
         </div>
          <hr class="footer-breaker">
+         <script src="index.js"></script>
     </body>
 </html>

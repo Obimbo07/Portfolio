@@ -1,5 +1,13 @@
-const hambergerbtn = document.querySelector('.hamberger-btn');
-const dropdown = document.querySelector('.drop-down');
-hambergerbtn.addEventListener('click', () => {
-  dropdown.style.display = (dropdown.style.display === 'none') ? 'block' : 'none';
-});
+const popup = document.getElementById('navMenu');
+const navMenu = document.getElementById('navMenu');
+
+function openMenu() {
+  popup.classList.add('dropdown-menuShow');
+  navMenu.classList.add('navMenu');
+}
+openMenu();
+function closeMenu() {
+  popup.classList.remove('dropdown-menuShow');
+  navMenu.classList.remove('navMenu');
+}
+closeMenu();
