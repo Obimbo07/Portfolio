@@ -473,7 +473,6 @@ fieldset {
 #close-nav {
   color: #fff;
   display: flex;
-  flex-direction: end;
 }
 
 .menu-link {
@@ -487,7 +486,6 @@ fieldset {
   line-height: 44px;
   letter-spacing: 0;
   text-align: left;
-  border-bottom: 10;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
@@ -495,7 +493,7 @@ fieldset {
 #menu-close {
   color: #fff;
   text-align: end;
-  padding: 4;
+  padding: 4px;
 }
 
 .dropdown-menu {
@@ -503,8 +501,8 @@ fieldset {
 }
 
 .dropdown-menuShow {
- display: block;
- z-index: 3;
+  display: block;
+  z-index: 3;
 }
 
 @media (min-width: 768px) {
