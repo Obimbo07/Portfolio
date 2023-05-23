@@ -15,6 +15,3 @@ function closeMenu() {
 }
 closeMenu(); 
 
-// function menudissapear() {
-//   menudissapear.classList.add('menu-dissapear')
-// }
