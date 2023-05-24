@@ -500,14 +500,20 @@ fieldset {
   line-height: 44px;
   letter-spacing: 0;
   text-align: left;
+  text-decoration: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
 
+a {
+  text-decoration: none;
+}
+
 #menu-close {
-  color: #fff;
+  color: rgba(151, 148, 147, 1);
   text-align: end;
   padding: 4px;
+  height: 14px;
 }
 
 .dropdown-menu {
