@@ -544,8 +544,13 @@ a {
 }
 
 #modalTitle {
-  color: #172b4d;
+  color: #172B4D;
   text-align: start;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 #modalContent {
