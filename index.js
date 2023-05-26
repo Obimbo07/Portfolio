@@ -75,7 +75,6 @@ const projects = [
 
 const projectsSection = document.getElementById('projectsSection');
 const modalOverlay = document.getElementById('modalOverlay');
-const modalContent = document.getElementById('modalContent');
 const modalTitle = document.getElementById('modalTitle');
 const modalImage = document.getElementById('modalImage');
 const modalDescription = document.getElementById('modalDescription');
@@ -84,36 +83,6 @@ const modalLiveLink = document.getElementById('modalLiveLink');
 const modalSourceLink = document.getElementById('modalSourceLink');
 const closeModalBtn = document.getElementById('closeModalBtn');
 
-function createProjectCard(project, index) {
-  const card = document.createElement('div');
-  card.classList.add('project-card');
-
-  const cardContent = `
-  <div class="card-works">
-  <h2 class="card-title">Profesional Art Printing Data</h2>
-  <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-  <ul class="card-techskills">
-    <li class="card-skillset">HTML</li>
-    <li class="card-skillset">Bootstrap</li>
-    <li class="card-skillset">Ruby</li>
-  </ul>
-  <button class="card-btn" data-index="${index}">See Project</button>
- </div> 
-     
-    `;
-  card.innerHTML = cardContent;
-  projectsSection.appendChild(card);
-
-  const cardbtn = card.querySelector('.card-btn');
-  cardbtn.addEventListener('click', function () {
-    const projectIndex = parseInt(this.getAttribute('data-index'));
-    openModal(projects[projectIndex]);
-  });
-}
-const recentProject = document.querySelector('.project-view');
-recentProject.addEventListener('click', () => {
-  openModal(projects[0]);
-});
 function openModal(project) {
   modalTitle.textContent = project.name;
   modalImage.src = project.image;
@@ -137,6 +106,37 @@ function openModal(project) {
 
   modalOverlay.style.display = 'block';
 }
+
+function createProjectCard(project, index) {
+  const card = document.createElement('div');
+  card.classList.add('project-card');
+
+  const cardContent = `
+  <div class="card-works">
+  <h2 class="card-title">Profesional Art Printing Data</h2>
+  <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+  <ul class="card-techskills">
+    <li class="card-skillset">HTML</li>
+    <li class="card-skillset">Bootstrap</li>
+    <li class="card-skillset">Ruby</li>
+  </ul>
+  <button class="card-btn" data-index="${index}">See Project</button>
+ </div> 
+     
+    `;
+  card.innerHTML = cardContent;
+  projectsSection.appendChild(card);
+
+  const cardbtn = card.querySelector('.card-btn');
+  cardbtn.addEventListener('click', function open() {
+    const projectIndex = parseInt(this.getAttribute('data-index'), 10);
+    openModal(projects[projectIndex]);
+  });
+}
+const recentProject = document.querySelector('.project-view');
+recentProject.addEventListener('click', () => {
+  openModal(projects[0]);
+});
 
 function closeModal() {
   modalOverlay.style.display = 'none';
