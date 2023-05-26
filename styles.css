@@ -25,15 +25,29 @@ header {
   padding: 10px 12px 10px 12px;
 }
 
+.menu-dissapear {
+  display: none;
+}
+
 #logo {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  size: 18px;
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
   color: #fff;
+  animation: rotate 1s ease-in-out forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hamberger-btn {
@@ -48,7 +62,7 @@ header {
   display: none;
 }
 
-#ham {
+.hamberger {
   cursor: pointer;
   margin-right: 14px;
   margin-top: 7px;
@@ -201,7 +215,7 @@ header {
 .card-works {
   background-image: url(img/Img-Placeholder1.png);
   display: grid;
-  gap: 25px;
+  gap: 17px;
 }
 
 .card-title {
@@ -241,11 +255,10 @@ header {
 }
 
 .card-btn {
-  display: transparent;
+  border: 0;
   height: 48px;
   background: #ff6b00;
   color: #fff;
-  border: none;
 }
 
 .about {
@@ -461,6 +474,154 @@ fieldset {
   margin: auto 27%;
 }
 
+.drop-down {
+  position: absolute;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  background-color: #3c3a39;
+  width: 100%;
+  height: 100%;
+}
+
+#close-nav {
+  color: #fff;
+  display: flex;
+}
+
+.menu-link {
+  color: #fff5e1;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+#menu-close {
+  color: rgba(151, 148, 147, 1);
+  text-align: end;
+  padding: 4px;
+  height: 14px;
+}
+
+.dropdown-menu {
+  padding: 13px;
+}
+
+.dropdown-menuShow {
+  display: block;
+  z-index: 3;
+}
+
+/* Styles for the popup */
+.project-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#modalOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#modalTitle {
+  color: #172b4d;
+  text-align: start;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+#modalImage {
+  width: inherit;
+  display: block;
+  height: 220px;
+}
+
+#closeModalBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.technologies-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+}
+
+.technologies-list li {
+  border: 1px solid #979493;
+  padding: 10px 12px;
+  width: auto;
+  height: 14px;
+}
+
+#modalDescription {
+  width: inherit;
+  color: #344563;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#linkflex {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+}
+
+#linkflex a {
+  background: #ff6b00;
+  width: 125px;
+  height: 24px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 @media (min-width: 768px) {
   .hamberger-btn {
     display: none;
@@ -531,6 +692,7 @@ fieldset {
 
   #grid-container {
     display: grid;
+    width: 100%;
   }
 
   .project-img {
@@ -545,7 +707,6 @@ fieldset {
   }
 
   .right-block {
-    height: fit-content;
     width: min-content;
     gap: 27px;
   }
@@ -555,10 +716,10 @@ fieldset {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    border: 0 solid #ccc;
   }
 
   .posts-description {
-    width: 173%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -569,6 +730,11 @@ fieldset {
 
   .card-btn {
     display: none;
+    transition: background-color 0.5s ease;
+  }
+
+  .card-btn:hover {
+    background-color: rgb(221, 137, 10);
   }
 
   .card-works:hover .card-btn {
@@ -670,5 +836,23 @@ fieldset {
 
   .footer-breaker {
     display: none;
+  }
+
+  #modalImage {
+    width: fit-content;
+    height: 448px;
+  }
+
+  #modalDescription {
+    padding: 0;
+    gap: 12px;
+    position: absolute;
+    width: 424px;
+    height: 336px;
+    right: 24px;
+    top: 156px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
   }
 }

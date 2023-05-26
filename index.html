@@ -7,26 +7,33 @@
         <meta name="author" content="Austin">
         <link rel="stylesheet" type="text/css" href="styles.css"> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
-
     </head>
     <body>
         <header>
           <div class="logo-container">
-            <a href=""><h3 id="logo">My Logo</h3></a>
+            <a href="#"><h3 id="logo">My Logo</h3></a>
+          </div>
+          <div class="drop-down" id="navMenu">
+            <ul class="dropdown-menu">
+             <h1 aria-hidden="true" id="menu-close" onclick="closeMenu()">&times;</h1>
+             <a href="#Home"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Portfolio</li> </a>
+             <a href="#About"><li class="menu-link" id="nav-btn" onclick="closeMenu()">About</li> </a>
+             <a href="#Contact"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Contact</li> </a>
+            </ul>
           </div>
           <nav>
-            <label for="check" class="hamberger-btn">
-            <img id="ham" href="#" src="img/IconMenu.png">
+            <label class="hamberger-btn" >
+            <img class="hamberger" id="ham" onclick="openMenu()" src="img/IconMenu.png">
             </label>
             <ul class="nav-link">
-              <li class="navbtn">Portfolio</li>
-              <li class="navbtn">About</li>
-              <li class="navbtn">Contact</li>
+              <li class="navbtn" >Portfolio</li>
+              <li class="navbtn" >About</li>
+              <li class="navbtn" >Contact</li>
               <img class="inbox" src="img/Union.png">
             </ul>
           </nav>
         </header>
-        <section class="banner-section">
+        <section class="banner-section" id="Home">
             <div class="container">
                 <h1 id="myName">
                     Hey There.
@@ -42,26 +49,27 @@
                             <a href=""><img src="img/github.svg" alt="GitHub" /></a>
                         </li>
                         <li class="icons">
-                            <a href=""><img src="img/Linkedin icon.svg" alt="GitHub" /></a>
+                            <a href=""><img src="img/Linkedin icon.svg" alt="LinkedIn" /></a>
                         </li>
                         <li class="icons">
-                            <a href=""><img src="img/angel list.svg" alt="GitHub" /></a>
+                            <a href=""><img src="img/angel list.svg" alt="angel" /></a>
                         </li>
                         <li class="icons">
-                            <a href=""><img src="img/twitter.svg" alt="GitHub" /></a>
+                            <a href=""><img src="img/twitter.svg" alt="twitter" /></a>
                         </li>
                         <li class="icons">
-                            <a href=""><img src="img/medium.svg" alt="GitHub" /></a>
+                            <a href=""><img src="img/medium.svg" alt="Medium" /></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-       <section class="works">
+       <section id="projects" class="works">
         <div class="recent-works">
             <h2 id="works-title">My Recent Works</h2>
             <hr class="works-break">
         </div>
+        
         <div id="grid-container">
             <div class="recent-project">
               <img class="project-img" src="img/Img-Placeholder.png" alt="img"/>
@@ -74,75 +82,30 @@
                 <li class="skillset">Bootstrap</li>
                 <li class="skillset">Ruby</li>
                </ul>
-               <button class="project-view"><p>See project</p></button>
+               <button class="project-view" class="card-btn" id="openModalBtn">See project</button>
              </div>
             </div>
+         </div>
              <!---- flexbox individual cards -->
-            <div class="cards-box">
-                <div class="card-works">
-                    <h2 class="card-title">Profesional Art Printing Data</h2>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                    <ul class="card-techskills">
-                      <li class="card-skillset">HTML</li>
-                      <li class="card-skillset">Bootstrap</li>
-                      <li class="card-skillset">Ruby</li>
-                    </ul>
-                    <button class="card-btn">See project</button>
-                </div> 
-                <div class="card-works">
-                    <h2 class="card-title">Profesional Art Printing Data</h2>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                    <ul class="card-techskills">
-                      <li class="card-skillset">HTML</li>
-                      <li class="card-skillset">Bootstrap</li>
-                      <li class="card-skillset">Ruby</li>
-                    </ul>
-                    <button class="card-btn">See project</button>
-                </div> 
-                <div class="card-works">
-                    <h2 class="card-title">Profesional Art Printing Data</h2>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                    <ul class="card-techskills">
-                      <li class="card-skillset">HTML</li>
-                      <li class="card-skillset">Bootstrap</li>
-                      <li class="card-skillset">Ruby</li>
-                    </ul>
-                    <button class="card-btn">See project</button>
-                </div> 
-                <div class="card-works">
-                    <h2 class="card-title">Profesional Art Printing Data</h2>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                    <ul class="card-techskills">
-                      <li class="card-skillset">HTML</li>
-                      <li class="card-skillset">Bootstrap</li>
-                      <li class="card-skillset">Ruby</li>
-                    </ul>
-                    <button class="card-btn">See project</button>
-                </div> 
-                <div class="card-works">
-                    <h2 class="card-title">Profesional Art Printing Data</h2>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                    <ul class="card-techskills">
-                      <li class="card-skillset">HTML</li>
-                      <li class="card-skillset">Bootstrap</li>
-                      <li class="card-skillset">Ruby</li>
-                    </ul>
-                    <button class="card-btn">See project</button>
-                </div> 
-                <div class="card-works">
-                    <h2 class="card-title">Profesional Art Printing Data</h2>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                    <ul class="card-techskills">
-                      <li class="card-skillset">HTML</li>
-                      <li class="card-skillset">Bootstrap</li>
-                      <li class="card-skillset">Ruby</li>
-                    </ul>
-                    <button class="card-btn">See project</button>
-                </div> 
-            </div>
-        </div>
+            
        </section>
-       <section class="about">
+       <section id="projectsSection" class="grid-container cards-box">
+        <!-- Projects will be dynamically created here -->
+      </section>
+       <div id="modalOverlay">
+        <div id="modalContent">
+          <h2 id="modalTitle"></h2>
+          <ul id="modalTechnologies"></ul>
+          <img id="modalImage" src="" alt="">
+          <p id="modalDescription"></p>
+          <div id=linkflex> 
+          <a id="modalLiveLink" href="" target="_blank">Live Version<img src="img/Icon.png" alt="GitHub" /></a>
+          <a id="modalSourceLink" href="" target="_blank">Source Code<img src="img/github.svg" alt="GitHub" /></a>
+          </div>
+          <span id="closeModalBtn">&times;</span>
+        </div>
+      </div>
+       <section class="about" id="About">
         <div class="about-me">
             <h2 class="about-title">About me</h2>
             <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -191,7 +154,7 @@
               </ul>
           </div>
        </section>
-       <section class="bottom-footer">
+       <section class="bottom-footer" id="Contact">
            <div class="contact-section">
               <p class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
            </div>
@@ -231,5 +194,6 @@
             </ul>
         </div>
          <hr class="footer-breaker">
+         <script src="index.js"></script>
     </body>
 </html>
