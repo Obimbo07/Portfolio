@@ -21,7 +21,7 @@ const projects = [
     name: 'Multi Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
-    image: 'Img/projects.png',
+    image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
   },
@@ -29,7 +29,7 @@ const projects = [
     index: 1,
     name: 'Multi Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'Img/projects.png',
+    image: 'img/projects.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     liveLink: 'https://example.com/project2',
     sourceLink: 'https://github.com/user/project2',
@@ -39,7 +39,7 @@ const projects = [
     name: 'Multi Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
-    image: 'Img/projects.png',
+    image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
   },
@@ -48,7 +48,7 @@ const projects = [
     name: 'Multi Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
-    image: 'Img/projects.png',
+    image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
   },
@@ -57,7 +57,7 @@ const projects = [
     name: 'Multi Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technoloBootstraps: ['HTML', 'Bootstrap', 'Ruby on rails'],
-    image: 'Img/projects.png',
+    image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
   },
@@ -66,7 +66,7 @@ const projects = [
     name: 'Multi Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
-    image: 'Img/projects.png',
+    image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
   },
@@ -82,6 +82,10 @@ const modalTechnologies = document.getElementById('modalTechnologies');
 const modalLiveLink = document.getElementById('modalLiveLink');
 const modalSourceLink = document.getElementById('modalSourceLink');
 const closeModalBtn = document.getElementById('closeModalBtn');
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+const errMsg = document.querySelector('.err-msg');
+const msgText = 'Please write your email in lowercase';
 
 function openModal(project) {
   modalTitle.textContent = project.name;
@@ -148,4 +152,15 @@ closeModalBtn.addEventListener('click', () => {
 
 projects.forEach((project, index) => {
   createProjectCard(project, index);
+});
+/* ---- validation form ----- */
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    errMsg.textContent = msgText;
+    errMsg.classList.add('errMsgAdd');
+    console.log(errMsg);
+    e.preventDefault();
+  } else {
+    errMsg.classList.add('errMsgRmv');
+  }
 });
