@@ -158,9 +158,27 @@ form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
     errMsg.textContent = msgText;
     errMsg.classList.add('errMsgAdd');
-    console.log(errMsg);
     e.preventDefault();
   } else {
     errMsg.classList.add('errMsgRmv');
+  }
+});
+
+const fullName = document.getElementById('Full-name');
+const message = document.getElementById('mess');
+form.addEventListener('click', (e) =>{
+  const contactData = {
+    fullName: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('contactData'));
+  if (data) {
+    fullName.value = data.fullName;
+    email.value = data.email;
+    message.value = data.message;
   }
 });
