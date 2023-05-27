@@ -166,7 +166,7 @@ form.addEventListener('submit', (e) => {
 
 const fullName = document.getElementById('Full-name');
 const message = document.getElementById('mess');
-form.addEventListener('click', (e) =>{
+form.addEventListener('click', () => {
   const contactData = {
     fullName: fullName.value,
     email: email.value,
