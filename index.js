@@ -15,7 +15,7 @@ function closeMenu() {
 }
 closeMenu();
 // Project data array
-const projects = [
+const projects === [
   {
     index: 0,
     name: 'Multi Post Stories',
