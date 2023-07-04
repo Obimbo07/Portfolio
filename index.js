@@ -18,12 +18,12 @@ closeMenu();
 const projects = [
   {
     index: 0,
-    name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
-    image: 'img/projects.png',
-    liveLink: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
+    name: 'Olay Company',
+    description: 'This company is based in Vietnam and offers online jobs to its clients, I created it using PHP frameworks, The Company has an inbuilt e-commerce store. Using Software as a service, (SAS) olay company allows its clients to earn a stable wage daily and also a good money market Fund for all your goals and achievments. Olay also has an online customer support system intergrated with TAWK.io. Check it out and experience what olay has to offer',
+    technologies: ['PHP Frameworks'],
+    image: 'img/Olay .png',
+    liveLink: 'https://www.olaycompany.com',
+    sourceLink: 'Not Sourced on Github',
   },
   {
     index: 1,
@@ -117,7 +117,7 @@ function createProjectCard(project, index) {
 
   const cardContent = `
   <div class="card-works">
-  <h2 class="card-title">Profesional Art Printing Data</h2>
+  <h2 class="card-title">Projects</h2>
   <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
   <ul class="card-techskills">
     <li class="card-skillset">HTML</li>
@@ -158,9 +158,27 @@ form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
     errMsg.textContent = msgText;
     errMsg.classList.add('errMsgAdd');
-    console.log(errMsg);
     e.preventDefault();
   } else {
     errMsg.classList.add('errMsgRmv');
+  }
+});
+
+const fullName = document.getElementById('Full-name');
+const message = document.getElementById('mess');
+form.addEventListener('click', () => {
+  const contactData = {
+    fullName: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('contactData'));
+  if (data) {
+    fullName.value = data.fullName;
+    email.value = data.email;
+    message.value = data.message;
   }
 });
