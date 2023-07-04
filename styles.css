@@ -567,6 +567,10 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.project-img {
+  width: 100%
+}
+
 #modalImage {
   display: block;
 }
@@ -652,6 +656,7 @@ a {
 
   .navbtn {
     padding: 5%;
+    color: #fff;
   }
 
   nav {
@@ -659,7 +664,6 @@ a {
   }
 
   .inbox {
-    width: 50%;
     height: 50%;
     margin-top: 5%;
   }
