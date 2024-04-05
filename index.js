@@ -2,6 +2,25 @@ const popup = document.getElementById('navMenu');
 const navMenu = document.getElementById('navMenu');
 const menudissapear = document.getElementById('nav-btn');
 
+window.addEventListener('DOMContentLoaded', () => {
+  // Simulate an API request or any async operation
+  // Replace with your actual data loading logic and time=
+  setTimeout(() => {
+    hideLoader();
+    showContent();
+  }, 2500);
+
+  function hideLoader() {
+    const loader = document.getElementById('loader');
+    loader.style.display = 'none';
+  }
+
+  function showContent() {
+    const content = document.getElementById('content');
+    content.style.display = 'block';
+  }
+});
+
 function openMenu() {
   popup.classList.add('dropdown-menuShow');
   navMenu.classList.add('navMenu');
