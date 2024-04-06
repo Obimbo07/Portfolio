@@ -41,7 +41,7 @@ header {
   background-color: #3c3a39;
   width: 100%;
   height: auto;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 }
 
@@ -129,11 +129,30 @@ header {
   gap: 3px;
 }
 
+.first {
+  background-image: url(img/about.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 101.9%;
+}
+
+.second {
+  background-image: url(img/vision.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 101.9%;
+}
+.element {
+  background-color: #0d151e;
+  width: fit-content;
+  color: #fff;
+  padding: 10px;
+}
 .card {
+  background-color: #1c1a19;
   border-radius: 12px;
-    background-color: #091e42;
-    padding: 10px;
-    margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 #title {
@@ -685,6 +704,22 @@ a {
   display: none;
 }
 
+.professional {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 2px;
+}
+
+.img-fluid {
+  width: -webkit-fill-available;
+  height: auto;
+}
+
+.section-content {
+  background-color: #091e42;
+}
+
 @media (min-width: 768px) {
   .hamberger-btn {
     display: none;
@@ -704,6 +739,12 @@ a {
 
   nav {
     margin-right: 11%;
+  }
+
+  .mission-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 
   .inbox {
