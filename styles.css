@@ -45,6 +45,9 @@ header {
   justify-content: space-between;
 }
 
+.section-content {
+  
+}
 
 .logo-container {
   height: auto;
@@ -105,7 +108,7 @@ header {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 12px;
-  background-image: url(img/passport.jpeg);
+  /* background-image: url(img/passport.jpeg); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 46.9%;
@@ -714,10 +717,6 @@ a {
 .img-fluid {
   width: -webkit-fill-available;
   height: auto;
-}
-
-.section-content {
-  background-color: #091e42;
 }
 
 @media (min-width: 768px) {
