@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,52 +7,295 @@
         <meta name="author" content="Austin">
         <link rel="stylesheet" type="text/css" href="styles.css"> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     </head>
     <body>
-      <header>
-        <div class="logo-container">
-            <a href="#">
-                <h3 id="logo">My Logo</h3>
-            </a>
-        </div>
-          <nav>   
-            <label for="check" class="hamberger-btn">
-             <img id="ham" href="#" src="img/IconMenu.png">
+      <div id="loader"></div>
+        <section id="content">
+        <header>
+          <div class="logo-container">
+            <a href="#"><h3 id="logo">My Logo</h3></a>
+          </div>
+          <div class="drop-down" id="navMenu">
+            <ul class="dropdown-menu">
+             <h1 aria-hidden="true" id="menu-close" onclick="closeMenu()">&times;</h1>
+             <a href="#Home"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Portfolio</li> </a>
+             <a href="#About"><li class="menu-link" id="nav-btn" onclick="closeMenu()">About</li> </a>
+             <a href="#Contact"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Contact</li> </a>
+            </ul>
+          </div>
+          <nav>
+            <label class="hamberger-btn" >
+            <img class="hamberger" id="ham" onclick="openMenu()" src="img/IconMenu.png">
             </label>
+            <ul class="nav-link">
+              <a class="navbtn" href="#Home"><li class="navbtn">Portfolio</li> </a>
+              <a class="navbtn" href="#About"><li>About</li></a>
+              <a class="navbtn" href = "#Contact"><li>Contact</li></a>
+              <img class="inbox" src="img/Union.png">
+            </ul>
           </nav>
-      </header>
+        </header>
+        <section class="banner-section" id="Home">
+            <div class="container">
+                <h1 id="myName">
+                    Hey There.
+                    <br>
+                    I'm Austine.
+                </h1>
+                 <p id="title">I'm a Software Developer</p>
+                 <p id="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                   don’t hesitate to contact me.</p>
+                <div class="socials">
+                   <ul class="iconsSection">
+                        <li class="icons">
+                            <a href="https://github.com/Obimbo07" ><img src="img/github.svg" alt="GitHub" /></a>
+                        </li>
+                        <li class="icons">
+                            <a href="https://www.linkedin.com/in/austin-obimbo-9a613623a/"  ><img src="img/Linkedin icon.svg" alt="LinkedIn" /></a>
+                        </li>
+                        <li class="icons">
+                            <a href=""><img src="img/angel list.svg" alt="angel" /></a>
+                        </li>
+                        <li class="icons">
+                            <a href=""><img src="img/twitter.svg" alt="twitter" /></a>
+                        </li>
+                        <li class="icons">
+                            <a href=""><img src="img/medium.svg" alt="Medium" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+          <div class="mission-cards">
+            <img class="imgslider-cards" src="/img/about.jpg" alt="" />
+            <img class="imgslider-cards" src="/img//vision.jpg" alt="" />
+             <div class="card first">
+              <h2 class="element">Vision</h2>
+              <p class="element">To Enterprenuer the technological industry through developing 
+                a welcoming future by improving our everyday lives.
+              </p>
+              <p class="element">To impact a crystal clear path for Mentees aspiring to embark in the software engineering journey</p>
+             </div>
+             <div class="card ">
+              <h2 class="element">Inspiration</h2>
+              <p class="element">My inspiration comes from:
+                <ul class="list-group element">
+                  <li>Believing I am among the greatest ever lived</li>
+                  <li>My own famliy is made of greatness</li>
+                  <li>Interacting with other Software Engineers</li>
+                  <li>Engaging in tech-talks and conversations</li>
+                  <li>Doing research and News and publications</li>
+                </ul>
+              </p>
+             </div>
+             <div class="card second">
+              <h2 class="element">Mission</h2>
+              <ul class="list-group element">
+                <li>To empower developers and grow in the technological industry.</li>
+                <li>Positively Impact the community and world at large </li>
+                <li>Improve my problem-solving techniques</li>
+                <li>Mentor juniors and newbies into greatness</li>
+              </ul>
+              
+              <p class="element">To impact a crystal clear path for Mentees aspiring to embark in the software engineering journey</p>
+             </div>
+          </div>
+        </section>
+        <section class="col professional">
+          <div class="col-md-2 section-pic">
+              <img class="img-fluid" src="/img/passport.jpeg" alt="Austin professional picture">
+          </div>
+          <div class="col-md-4 section-content">
+              <h2>Introduction</h2>
+              <p>My name is Austin Obimbo. I am a proactive techprenuer & team leader with 2 years experience as a professional developer. I have been able to build and 
+                and collaborate on high scaled projects.I love travelling, exploring nature, doing research.</p>
+      
+              <h2>Skills</h2>
+              <ul class="summaryskills">
+                <li>FrontEnd: React, React Native, Wordpress, HTML, CSS </li>
+                <li>Backend: Ruby on Rails, postgreSQL, MySQL, API development</li>
+                <li>Data operations analyst, Test-driven development, Project Development</li>
+                <li>Developer Tools: Zoom, Slack, Airtable, Kanban Boards </li>
+              </ul>
 
-      <section class="section">
-        <div class="container">
-            <h1 id="myName">
-                Hey There.
-                <br>
-                I'm Austine.
-            </h1>
-            <p id="title">I'm a Software Developer</p>
-            <p id="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
-              don’t hesitate to contact me.</p>
+              <h2>Projects</h2>
+              <p>I have developed software in the following fields:</p>
+              <ul class="summaryskills">
+                <li>Content Management Services</li>
+                <li>User Authentication systems</li>
+                <li>Software as a Service SAAS</li>
+                <li>API  development & Intergration</li>
+              </ul>
+      
+              <h2>Training & Experience</h2>
+              <p>I have gained skills and apprenticeship from Microverse and Coursera. I dedicated 2000+ hours into acquring knowledge and hands-on experience 
+                through remote collaboration and pair-programming with individuals in diffrent time-zones. 
+              </p>
+      
+              <h2>Volunteer</h2>
+              <p>Throughout the program i have had the ability to mentor fellow teammates and non-techies. 
+                Helping them solve complex promblems, develop soft-skills, handling software architecture and design.My knowledge has shown light to the mentee and this 
+               makes me happy and motivates me more</p>
+          </div>
+
+          <ul class="icons-sctn">
+          <li class="prof-icons">
+              <a href="https://github.com/Obimbo07" ><img src="img/github.svg" alt="GitHub" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href="https://www.linkedin.com/in/austin-obimbo-9a613623a/"  ><img src="img/Linkedin icon.svg" alt="LinkedIn" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href=""><img src="img/angel list.svg" alt="angel" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href=""><img src="img/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href=""><img src="img/medium.svg" alt="Medium" /></a>
+          </li>
+      </ul>
+       <h2>Austin Obimbo</h2>
+       <h1>SOFTWARE ENGINEER, FULL-STACK WEB DEVELOPER</h1>
+       <p>I believe in creating a better tommorrow by bettering our everyday lives</p>
+      </section>
+      
+       <section id="projects" class="works">
+        <div class="recent-works">
+            <h2 id="works-title">My Recent Works</h2>
+            <hr class="works-break">
+        </div>
         
-           <div class="flex-socials">
-            <ul class="iconsSection">
+        <div id="grid-container">
+            <div class="recent-project">
+              <img class="project-img" src="img/Trip.jfif" alt="Olay company desktop view"/>
+              <div class="right-block">
+                <h2 class="title-post">Book Destinaton</h2>
+                <p class="posts-description">This Full stack application helps users book holiday, meeting and home destinations, in various places. Users have can perform CRUD operations on the destinations.</p>
+               <ul class="tech-skills">
+                <li class="skillset">React</li>
+                <li class="skillset">React-Bootstrap</li>
+                <li class="skillset">API</li>
+                <li class="skillset">Ruby</li>
+               </ul>
+               <button type="button" class="project-view" class="card-btn" id="openModalBtn">See project</button>
+             </div>
+            </div>
+         </div>
+            
+       </section>
+       <section id="projectsSection" class="grid-container cards-box">
+  
+      </section>
+       <div id="modalOverlay">
+        <div id="modalContent">
+          <h2 id="modalTitle"></h2>
+          <ul id="modalTechnologies"></ul>
+          <img id="modalImage" src="Img/projects.png" alt="PopUp">
+          <p id="modalDescription"></p>
+          <div id=linkflex> 
+          <a id="modalLiveLink" href="" target="_blank">Live Version<img src="img/Icon.png" alt="GitHub" /></a>
+          <a id="modalSourceLink" href="" target="_blank">Source Code<img src="img/github.svg" alt="GitHub" /></a>
+          </div>
+          <span id="closeModalBtn">&times;</span>
+        </div>
+      </div>
+       <section class="about" id="About">
+        <div class="about-me">
+            <h2 class="about-title">About me</h2>
+            <iframe class="about-video" src="https://www.loom.com/embed/bfcd8b134e944dc4ad7797251b55ecef?sid=00211d1c-31e3-48ea-8553-d522cf4da28a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+            <button type="button" onclick="location.href = 'https://drive.google.com/file/d/14oawHPuNXChYYcxJ_On0InIbBeMjd5ML/view?usp=share_link'" target = "_blank" class="resume">Get my resume</button>
+          </div>
+          <hr class="about-breaker">
+          <div class="skills">
+            <ul class="tools-list">
+                <ul class="listtopography">
+                 <li class="header-list" id="language">
+                  <img id="titles" src="img/Rectangle 55.png" alt="Languages">
+                  <h1>Language</h1>
+                 </li>
+                 <ul class="mini-list">
+                  <li class="detail">JavaScript</li>
+                  <li class="detail">Ruby</li>
+                  <li class="detail">HTML</li>
+                  <li class="detail">CSS</li>
+                 </ul>
+                </ul>
+                <ul class="listtopography">
+                  <li class="header-list" id="frameworks">
+                    <img id="titles" src="img/Rectangle 56.png" alt="Languages">
+                    <h1>Frameworks</h1>
+                  </li>
+                  <ul class="mini-list">
+                    <li class="detail">React.js</li>
+                    <li class="detail">Ruby on rails</li>
+                    <li class="detail">RSpec</li>
+                    <li class="detail">Capybara</li>
+                  </ul>
+                 </ul>
+                 <ul class="listtopography">
+                    <li class="header-list" id="skills">
+                      <img id="titles" src="img/Rectangle 57.png" alt="Languages">
+                      <h1>Skills</h1>
+                     </li>
+                     <ul class="mini-list">
+                      <li class="detail">Database Management</li>
+                      <li class="detail">Version Control</li>
+                      <li class="detail">CLI</li>
+                      <li class="detail">API Design</li>
+                      <li class="detail">Web Development</li>
+                     </ul>
+                  </ul>
+              </ul>
+          </div>
+       </section>
+       <section class="bottom-footer" id="Contact">
+           <div class="contact-section">
+              <p class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+           </div>
+           <form class="contact-form" action="https://formspree.io/f/mzbqwqyj" method="post">
+            <fieldset> 
+            <label> 
+           <input id="Full-name" name="Full-name" type="text" required placeholder="Full name" max-length="30" />
+            </label>
+            <label>
+           <input id="email" name="email" type="email" required placeholder="Email address" />
+          </label>
+          </fieldset>
+            <textarea name="mess" id="mess" placeholder="Write me something..." cols="50" rows="10" maxlength="500"></textarea>
+            <button type="button" class="Submit-btn">
+           Get in touch
+         </button>
+         <span class="err-msg"></span>
+        </form>
+      </section>
+        <hr class="form-breaker">
+        <div class="footer">
+            <ul class="footerIcons">
                 <li class="icons">
-                    <a href=""><img src="img/github.svg" alt="GitHub" /></a>
+                    <a href=""><img class="icon-bg" src="img/Vector.png" alt="GitHub" /></a>
                 </li>
                 <li class="icons">
-                    <a href=""><img src="img/Linkedin icon.svg" alt="GitHub" /></a>
+                    <a href=""><img class="icon-bg" src="img/Group.png" alt="GitHub" /></a>
                 </li>
                 <li class="icons">
-                    <a href=""><img src="img/angel list.svg" alt="GitHub" /></a>
+                    <a href=""><img class="icon-bg" src="img/Vector-4.png" alt="GitHub" /></a>
                 </li>
                 <li class="icons">
-                    <a href=""><img src="img/twitter.svg" alt="GitHub" /></a>
+                    <a href=""><img class="icon-bg" src="img/Vector-5.png" alt="GitHub" /></a>
                 </li>
                 <li class="icons">
-                    <a href=""><img src="img/medium.svg" alt="GitHub" /></a>
+                    <a href=""><img class="icon-bg" src="img/Vector-6.png" alt="GitHub" /></a>
                 </li>
             </ul>
-        </div>
-      </section>
+            <hr class="footer-breaker">
+          </section>
+     <script src="index.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     </body>
 </html>
