@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 const popup = document.getElementById('navMenu');
 const navMenu = document.getElementById('navMenu');
 const menudissapear = document.getElementById('nav-btn');

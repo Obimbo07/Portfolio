@@ -9,7 +9,7 @@ li {
 
 #content {
   display: none;
-} 
+}
 
 #loader {
   border: 4px solid rgba(255, 255, 255, 0.3);
@@ -37,7 +37,7 @@ li {
 }
 
 .summaryskills {
-  color: #black;
+  color: #000;
 }
 
 /* Navigation */
@@ -48,8 +48,6 @@ header {
   display: flex !important;
   justify-content: space-between;
 }
-
-
 
 .logo-container {
   height: auto;
@@ -110,6 +108,7 @@ header {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 12px;
+
   /* background-image: url(img/passport.jpeg); */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -147,11 +146,13 @@ header {
   background-repeat: no-repeat;
   background-size: 101.9%;
 }
+
 .element {
   width: fit-content;
   color: #fff;
   padding: 10px;
 }
+
 .card {
   background-color: #1c1a19;
   border-radius: 12px;
@@ -717,15 +718,15 @@ a {
   margin-top: 2px;
 }
 
-.img-fluid {
+/* .img-fluid {
   width: -webkit-fill-available;
   height: auto;
-}
+} */
 
 .icons-sctn {
   display: flex;
-    gap: 20px;
-    margin-left: 18px;  
+  gap: 20px;
+  margin-left: 18px;
 }
 
 .about-video {
@@ -746,7 +747,6 @@ a {
 }
 
 @media (min-width: 768px) {
-
   .card {
     background-color: #1c1a19;
     border-radius: 12px;
@@ -764,6 +764,7 @@ a {
     from {
       margin-left: -150%;
     }
+
     to {
       margin-left: 0%;
     }
@@ -773,7 +774,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
   }
 
   .hamberger-btn {
