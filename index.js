@@ -1,6 +1,17 @@
 const popup = document.getElementById('navMenu');
 const navMenu = document.getElementById('navMenu');
 const menudissapear = document.getElementById('nav-btn');
+const slides = document.querySelectorAll('.imgslider-cards');
+
+let currentSlide = 0;
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+setInterval(nextSlide, 3000);
 
 window.addEventListener('DOMContentLoaded', () => {
   // Simulate an API request or any async operation

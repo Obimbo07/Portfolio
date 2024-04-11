@@ -135,20 +135,19 @@ header {
 }
 
 .first {
-  background-image: url(img/about.jpg);
+  /* background-image: url(img/about.jpg); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 101.9%;
 }
 
 .second {
-  background-image: url(img/vision.jpg);
+  /* background-image: url(img/vision.jpg); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 101.9%;
 }
 .element {
-  background-color: #0d151e;
   width: fit-content;
   color: #fff;
   padding: 10px;
@@ -726,11 +725,50 @@ a {
 .icons-sctn {
   display: flex;
     gap: 20px;
-    margin-left: 18px;
-    
+    margin-left: 18px;  
+}
+
+.about-video {
+  width: 100%;
+  height: 25em;
+}
+
+.imgslider-cards {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.imgslider-cards.active {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
+
+  .card {
+    background-color: #1c1a19;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    height: fit-content;
+    position: relative;
+    top: 102px;
+    right: -465px;
+    animation: 10s card-slide;
+  }
+
+  @keyframes card-slide {
+    from {
+      margin-left: -150%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+
   .professional {
     display: flex;
     flex-direction: row;
@@ -762,6 +800,9 @@ a {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    height: 35em;
+    position: relative;
+    overflow: hidden;
   }
 
   .inbox {
