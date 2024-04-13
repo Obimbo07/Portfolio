@@ -1,5 +1,9 @@
 const articles = [
   {
+    id: 0,
+    name: 'John',
+  },
+  {
     id: 1,
     name: 'John',
   },
@@ -19,11 +23,28 @@ const articles = [
     id: 5,
     name: 'John',
   },
-  {
-    id: 6,
-    name: 'John',
-  },
 ];
 
-const articleSection = document.getElementsByClassName('articles-section');
-const 
+function articleCards(article) {
+  console.log(article);
+  const articleSection = document.getElementById('article-section');
+  const card = document.createElement('div');
+  card.classList.add('article-card');
+
+  const cardContent = `
+  <div class="card-works">
+  <h2 class="card-title">Projects</h2>
+  <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+  <ul class="card-techskills">
+    <li class="card-skillset">HTML</li>
+    <li class="card-skillset">Bootstrap</li>
+    <li class="card-skillset">Ruby</li>
+  </ul>
+  `;
+  card.appendChild(cardContent);
+  articleSection.appendChild(card);
+}
+
+articles.forEach((article) => {
+  articleCards(article);
+});
