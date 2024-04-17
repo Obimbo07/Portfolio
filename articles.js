@@ -26,22 +26,17 @@ const articles = [
 ];
 
 function articleCards(article) {
-  console.log(article);
   const articleSection = document.getElementById('article-section');
   const card = document.createElement('div');
   card.classList.add('article-card');
 
   const cardContent = `
-  <div class="card-works">
-  <h2 class="card-title">Projects</h2>
-  <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-  <ul class="card-techskills">
-    <li class="card-skillset">HTML</li>
-    <li class="card-skillset">Bootstrap</li>
-    <li class="card-skillset">Ruby</li>
-  </ul>
+    <article>
+    <h2>${article.name}</h2>
+    <p>Article ID: ${article.id}</p>
+    </article>
   `;
-  card.appendChild(cardContent);
+  card.innerHTML = cardContent;
   articleSection.appendChild(card);
 }
 
