@@ -183,7 +183,6 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #ffff;
-  width: 40%;
 }
 
 .socials {
@@ -647,7 +646,6 @@ a {
   left: 50%;
   width: 77%;
   transform: translate(-50%, -50%);
-  overflow: scroll;
 }
 
 .project-img {
