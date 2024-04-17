@@ -389,6 +389,10 @@ header {
   margin-top: 50%;
 }
 
+.resume-svg {
+  width: 12%;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -396,6 +400,8 @@ header {
   gap: 24px;
   color: #fff;
   width: 100%;
+  background-color:#1c1a19;
+  padding: 10px;
 }
 
 .listtopography {
