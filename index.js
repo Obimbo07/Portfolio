@@ -18,7 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // Simulate an API request or any async operation
   // Replace with your actual data loading logic and time=
   setTimeout(() => {
+    // eslint-disable-next-line no-use-before-define
     hideLoader();
+    // eslint-disable-next-line no-use-before-define
     showContent();
   }, 2500);
 
@@ -147,7 +149,7 @@ function createProjectCard(project, index) {
   card.classList.add('project-card');
 
   const cardContent = `
-  <div class="card-works">
+  <div class="card-works" style="background-image: url(${project.image}); background-position: top; background-size: contain; background-repeat: no-repeat;">
   <h2 class="card-title">Projects</h2>
   <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
   <ul class="card-techskills">
