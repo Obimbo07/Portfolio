@@ -287,7 +287,7 @@ header {
 }
 
 .card-works {
-  background-image: url(img/Img-Placeholder1.png);
+  /* background-image: url(img/Img-Placeholder1.png); */
   display: grid;
   gap: 17px;
 }
@@ -779,6 +779,39 @@ p {
 
 .section-content h1 {
   font-weight: 600;
+}
+
+.btn {
+  background-color: #ff6b00;
+}
+
+.about-btn button {
+ background-color: #ff6b00;
+ padding: 10px;
+ position: absolute;
+ right: 20px;
+ border-radius: 250%;
+ animation: btn-slide 4s ease-in-out;
+}
+
+.about-btn button:hover {
+  padding: 20px;
+  border-radius: 200%;
+  cursor: pointer;
+}
+
+h1 {
+font: caption;
+}
+@keyframes btn-slide {
+  from {
+    right: -100px;
+  }
+
+  to {
+    right: 20px;
+
+  }
 }
 
 @media (min-width: 768px) {
