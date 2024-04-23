@@ -1,10 +1,10 @@
 #content {
- background-color: bisque;
+  background-color: bisque;
 }
 
 #article-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
