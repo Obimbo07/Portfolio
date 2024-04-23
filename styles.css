@@ -26,6 +26,16 @@ li {
   display: block;
 }
 
+.brands a {
+  width: 20%;
+  display: contents;
+}
+
+.blog-part {
+  height: 30em;
+  background-color: #0d151e;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -153,7 +163,6 @@ header {
   padding: 7px;
 }
 
-
 .card {
   background-color: #1c1a19;
   border-radius: 12px;
@@ -164,7 +173,7 @@ header {
 }
 
 .card:hover {
-  background-color:#091e42;
+  background-color: #091e42;
 }
 
 #title {
@@ -399,7 +408,7 @@ header {
   gap: 24px;
   color: #fff;
   width: 100%;
-  background-color:#1c1a19;
+  background-color: #1c1a19;
   padding: 10px;
 }
 
@@ -786,12 +795,12 @@ p {
 }
 
 .about-btn button {
- background-color: #ff6b00;
- padding: 10px;
- position: absolute;
- right: 20px;
- border-radius: 250%;
- animation: btn-slide 4s ease-in-out;
+  background-color: #ff6b00;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  border-radius: 250%;
+  animation: btn-slide 4s ease-in-out;
 }
 
 .about-btn button:hover {
@@ -801,8 +810,9 @@ p {
 }
 
 h1 {
-font: caption;
+  font: caption;
 }
+
 @keyframes btn-slide {
   from {
     right: -100px;
@@ -810,14 +820,13 @@ font: caption;
 
   to {
     right: 20px;
-
   }
 }
 
 @media (min-width: 768px) {
   .professional-footer {
     margin-left: 11%;
-    margin-top: 2%
+    margin-top: 2%;
   }
 
   .prof-icons {
@@ -829,14 +838,14 @@ font: caption;
   .section-pic img {
     width: -webkit-fill-available;
   }
-  
+
   .section-pic {
     width: 24%;
   }
 
   .section-content p {
     width: 72%;
-  } 
+  }
 
   .section-content {
     width: 48%;
