@@ -43,24 +43,3 @@ function articleCards(article) {
 articles.forEach((article) => {
   articleCards(article);
 });
-
-function renderRecentArticles() {
-  const recentBlogsDiv = document.getElementsById('recent-blogs');
-  recentBlogsDiv.innerHTML = '';
-
-  articles.forEach((article) => {
-    const articleCard = document.createElement('div');
-    articleCard.classList.add('articleCard');
-
-    const cardContent = `
-      <article>
-        <h2>${article.name}</h2>
-        <p>Article ID: ${article.id}</p>
-      </article>
-    `;
-    articleCard.innerHTML = cardContent;
-    recentBlogsDiv.appendChild(articleCard);
-  });
-}
-
-renderRecentArticles();
