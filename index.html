@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale= 1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="Austin">
-        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     </head>
@@ -322,13 +322,34 @@
           </div>
        </section>
        <section class="blog-part">
-         <div id="recent-blogs">
-
-         </div>
-         <div class="blog-link">
-          <a type="button" class="btn color-white  mx-auto" role="button">View more</a>
-         </div>
-       </section>
+        <div id="recent-blogs" class="d-inline">
+          <article class="article-card">
+            <div class="article-image">
+              <img src="/img/technology.jpg" class="img-fluid" alt="Article Image">
+            </div>
+            <div class="article-content">
+              <h2>Impact of AI on Programmers: Navigating Standard Shifts</h2>
+              <p>As a human being, one has been endowed with just enough intelligence to be able to see clearly</p>
+              <a href="https://medium.com/@obimboausts/impact-of-ai-on-programmers-navigating-standard-shifts-0e61830570cd" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="article-card">
+            <div class="article-image">
+              <img src="/img/gas.png" class="img-fluid" alt="AI and man image">
+            </div>
+            <div class="article-content">
+              <h2>Guiding the Next Generation: A Mentor’sThoughts!!</h2>
+              <p>Mentoring juniors and non-techies into the world of software development is a journey fraught with challenges and rewards.</p>
+              <a href="full_article.html" class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="blog-link">
+          <a type="button" class="btn color-white mx-auto" role="button">View more</a>
+        </div>
+      </section>
+      
+      
        <section class="bottom-footer" id="Contact">
            <div class="contact-section">
               <p class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
@@ -370,10 +391,9 @@
             </ul>
             <hr class="footer-breaker">
           </section>
-     <script src="index.js"></script>
-     <script src="articles.js"></script>
      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+     <script async src="articles.js"></script>
     </body>
 </html>

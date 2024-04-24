@@ -26,14 +26,13 @@ li {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .brands a {
   width: 20%;
   display: contents;
-}
-
-.blog-part {
-  height: 30em;
-  background-color: #0d151e;
 }
 
 @keyframes spin {
@@ -594,10 +593,6 @@ fieldset {
   border-bottom-style: solid;
 }
 
-a {
-  text-decoration: none;
-}
-
 #menu-close {
   color: rgba(151, 148, 147, 1);
   text-align: end;
@@ -781,9 +776,13 @@ p {
 }
 
 .section-content h2 {
-  font-family: emoji;
+  font-family: emoji, sans-serif;
   font-weight: 550;
   padding: 5px 0 12px 0;
+}
+
+h1 {
+  font: caption;
 }
 
 .section-content h1 {
@@ -809,8 +808,39 @@ p {
   cursor: pointer;
 }
 
-h1 {
-  font: caption;
+.article-card {
+  width: 30%;
+  max-height: 40em;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #616161;
+  padding: 20px;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.article-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
 }
 
 @keyframes btn-slide {
@@ -824,6 +854,17 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  .blog-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text */
+  }
+
+  .blog-link {
+    margin-top: 10px;
+  }
+
   .professional-footer {
     margin-left: 11%;
     margin-top: 2%;
@@ -836,7 +877,7 @@ h1 {
   }
 
   .section-pic img {
-    width: -webkit-fill-available;
+    max-width: 100%;
   }
 
   .section-pic {
