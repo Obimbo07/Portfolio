@@ -854,6 +854,14 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  .missionCard-container {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    right: -28%;
+  }
+
   .blog-part {
     display: flex;
     flex-direction: column;
@@ -875,15 +883,58 @@ h1 {
     padding: 9px;
     border-radius: 100%;
   }
+  .section-pic {
+    width: 24%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    animation: slide-left 3s ease-in-out;
+  }
+
+  .section-pic .border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 49%;
+    border-radius: 81%;
+    border: 49px solid transparent;
+    animation: borderRotate 10s linear infinite alternate;
+    pointer-events: none; /* Prevents border from blocking hover events */
+    border-style: groove;
+  }
 
   .section-pic img {
     max-width: 100%;
+    border-radius: 81%;
+    position: relative;
+    z-index: 1; /* Ensures image is on top of the border */
+    padding: 14px;
   }
 
-  .section-pic {
-    width: 24%;
+  @keyframes borderRotate {
+    0% {
+      transform: rotate(0deg);
+      border-color: #7bff00;
+    }
+    20% {
+      transform: rotate(20deg);
+      border-color:#7706f8f4;
+    }
+    100% {
+      transform: rotate(360deg);
+      border-color: #ff6b00;
+    }
   }
-
+  @keyframes slide-left {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
   .section-content p {
     width: 72%;
   }
@@ -897,8 +948,8 @@ h1 {
     border-radius: 12px;
     padding: 10px;
     margin: 10px;
-    width: 15%;
-    height: 20em;
+    width: 40%;
+    height: 10em;
     position: relative;
     top: 6px;
     right: -465px;
@@ -947,7 +998,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    height: 35em;
+    height: 45em;
     position: relative;
     overflow: hidden;
   }
