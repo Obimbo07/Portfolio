@@ -215,3 +215,39 @@ window.addEventListener('load', () => {
     message.value = data.message;
   }
 });
+
+function runCounter(targetId, start, end, duration) {
+  const range = end - start;
+  let current = start;
+  const increment = end > start ? 1 : -1;
+  const stepTime = Math.abs(Math.floor(duration / range));
+  const timer = setInterval(() => {
+    current += increment;
+    document.getElementById(targetId).innerText = current;
+    if (current === end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
+
+// Function to start the counters when the section is reached
+function startCounters(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      runCounter('projectsCounter', 0, 20, 2000);
+      runCounter('clientsCounter', 0, 30, 2000);
+      runCounter('experienceCounter', 0, 8, 2000);
+      runCounter('customersCounter', 0, 8, 2000);
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+// Create an intersection observer instance
+const observer = new IntersectionObserver(startCounters, { threshold: 0.5 });
+
+// Target the section with class cosection
+const section = document.querySelector('.cosection');
+
+// Observe the section
+observer.observe(section);
