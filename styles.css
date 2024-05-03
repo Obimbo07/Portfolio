@@ -127,7 +127,7 @@ header {
 }
 
 #myName {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Crete Round';
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -169,6 +169,7 @@ header {
   position: relative;
   padding: 10px;
   margin: 10px;
+  width: 40%;
 }
 
 .card:hover {
@@ -176,12 +177,12 @@ header {
 }
 
 #title {
-  height: 27px;
-  font-family: 'Roboto', sans-serif;
+  height: 31px;
+  font-family: 'Crete Round';
   font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  color: #fff5e1;
+  font-size: 21px;
+  line-height: 30px;
+  color: #e6a23c;;
 }
 
 #description {
@@ -343,6 +344,11 @@ header {
   color: #fff;
 }
 
+.missionCard-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .about {
   background-color: #1c1a19;
   background-image: url(img/Frame.png);
@@ -473,6 +479,24 @@ header {
   align-items: flex-start;
   padding: 50px 24px;
   gap: 58px;
+}
+
+.cosection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  flex-wrap: wrap;
+}
+
+.counter-section {
+  background-color: #091e42;
+  display: flex;
+  padding: 1%;
+  border-radius: 3%;
+  color: #fff;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 14px;
 }
 
 .contact-text {
@@ -755,6 +779,7 @@ fieldset {
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease;
+  height: 68%;
 }
 
 .imgslider-cards.active {
@@ -853,7 +878,17 @@ h1 {
   }
 }
 
+.section-pic img {
+  max-width: 45%;
+  border-radius: 100%;
+  margin-left: 49%;
+}
+
 @media (min-width: 768px) {
+  .imgslider-cards {
+    height: 97% !important;
+  }
+
   .company-brands {
     display: flex;
     flex-direction: column;
@@ -879,8 +914,8 @@ h1 {
   .blog-part {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers items horizontally */
-    text-align: center; /* Centers text */
+    align-items: center;
+    text-align: center;
   }
 
   .blog-link {
@@ -896,6 +931,7 @@ h1 {
     border: 2px solid #091e42;
     padding: 9px;
     border-radius: 100%;
+    background-color: #000;
   }
   .section-pic {
     width: 24%;
@@ -909,22 +945,24 @@ h1 {
   .section-pic .border {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -53px;
     width: 100%;
     height: 49%;
     border-radius: 81%;
     border: 49px solid transparent;
     animation: borderRotate 10s linear infinite alternate;
     pointer-events: none; 
-    border-style: groove;
+    border-style:dashed;
   }
 
   .section-pic img {
-    max-width: 100%;
+    max-width: 100% !important;
     border-radius: 81%;
     position: relative;
-    z-index: 1; /* Ensures image is on top of the border */
+    z-index: 1;
     padding: 14px;
+    margin-left: 0;
+
   }
 
   @keyframes borderRotate {
@@ -968,6 +1006,15 @@ h1 {
 
   .section-content {
     width: 48%;
+  }
+
+  .article-card {
+    width: fit-content;
+  }
+
+  #recent-blogs {
+    display: flex;
+    flex-direction: column !important;
   }
 
   .card {

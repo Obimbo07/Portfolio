@@ -143,14 +143,14 @@ function openModal(project) {
 
   modalOverlay.style.display = 'block';
 }
-
+// background-image: url(${project.image});
 function createProjectCard(project, index) {
   const card = document.createElement('div');
   card.classList.add('project-card');
 
   const cardContent = `
-  <div class="card-works" style="background-image: url(${project.image}); background-position: top; background-size: contain; background-repeat: no-repeat;">
-  <h2 class="card-title">Projects</h2>
+  <div class="card-works" style="background-position: top; background-size: contain; background-repeat: no-repeat;">
+  <h2 class="card-title">${project.name}</h2>
   <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
   <ul class="card-techskills">
     <li class="card-skillset">HTML</li>
