@@ -30,6 +30,18 @@ a {
   text-decoration: none;
 }
 
+.section-pic img {
+  max-width: 45%;
+  border-radius: 100%;
+  margin-left: 49%;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 .brands a img {
   width: 99%;
   height: 6em;
@@ -125,9 +137,9 @@ header {
   background-position-y: 180px;
   background-position: right;
 }
-
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
 #myName {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', Times;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -178,11 +190,11 @@ header {
 
 #title {
   height: 31px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', Times;
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
-  color: #e6a23c;;
+  color: #e6a23c;
 }
 
 #description {
@@ -707,10 +719,10 @@ fieldset {
   width: auto;
   height: 14px;
 }
-
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
 #modalDescription {
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Times;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -844,12 +856,6 @@ h1 {
   padding: 20px;
 }
 
-.article-image img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
 .article-content h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -878,12 +884,6 @@ h1 {
   }
 }
 
-.section-pic img {
-  max-width: 45%;
-  border-radius: 100%;
-  margin-left: 49%;
-}
-
 @media (min-width: 768px) {
   .imgslider-cards {
     height: 97% !important;
@@ -902,7 +902,7 @@ h1 {
     justify-content: space-around;
     width: 100%;
   }
-  
+
   .missionCard-container {
     width: 40%;
     display: flex;
@@ -933,6 +933,7 @@ h1 {
     border-radius: 100%;
     background-color: #000;
   }
+
   .section-pic {
     width: 24%;
     position: relative;
@@ -951,8 +952,8 @@ h1 {
     border-radius: 81%;
     border: 49px solid transparent;
     animation: borderRotate 10s linear infinite alternate;
-    pointer-events: none; 
-    border-style:dashed;
+    pointer-events: none;
+    border-style: dashed;
   }
 
   .section-pic img {
@@ -962,7 +963,6 @@ h1 {
     z-index: 1;
     padding: 14px;
     margin-left: 0;
-
   }
 
   @keyframes borderRotate {
@@ -970,36 +970,43 @@ h1 {
       transform: rotate(0deg);
       border-color: #7bff00;
     }
+
     20% {
       transform: rotate(20deg);
-      border-color:#7706f8f4;
+      border-color: #7706f8f4;
     }
+
     40% {
       transform: rotate(20deg);
-      border-color:#f80606;
+      border-color: #f80606;
     }
+
     60% {
       transform: rotate(20deg);
-      border-color:#f87f06f4;
+      border-color: #f87f06f4;
     }
+
     80% {
       transform: rotate(20deg);
-      border-color:hsl(238, 100%, 39%);
+      border-color: hsl(238, 100%, 39%);
     }
+
     100% {
       transform: rotate(360deg);
       border-color: #c800ff;
     }
   }
-  
+
   @keyframes slide-left {
     0% {
       transform: translateX(-100%);
     }
+
     100% {
       transform: translateX(0);
     }
   }
+
   .section-content p {
     width: 72%;
   }

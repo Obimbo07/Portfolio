@@ -4,15 +4,15 @@ const articles = [
     name: 'Impact of AI on Programmers: Navigating Standard Shifts',
     description: 'As a human being, one has been endowed with just enough intelligence to be able to see clearly',
     image: '/img/technology.jpg',
-    link: 'https://medium.com/@obimboausts/impact-of-ai-on-programmers-navigating-standard-shifts-0e61830570cd'
+    link: 'https://medium.com/@obimboausts/impact-of-ai-on-programmers-navigating-standard-shifts-0e61830570cd',
   },
   {
     id: 1,
     name: 'Guiding the Next Generation: A Mentor’s Thoughts!!',
     description: 'Mentoring juniors and non-techies into the world of software development is a journey fraught with challenges and rewards.',
     image: '/img/gas.png',
-    link: 'full_article.html'
-  }
+    link: 'full_article.html',
+  },
 ];
 
 function renderArticles() {
