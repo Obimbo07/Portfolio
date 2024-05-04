@@ -6,6 +6,16 @@
 li {
   list-style: none;
 }
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
 
 #content {
   display: none;
@@ -24,6 +34,27 @@ li {
   margin-left: -20px;
   margin-top: -20px;
   display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-pic img {
+  max-width: 45%;
+  border-radius: 100%;
+  margin-left: 49%;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.brands a img {
+  width: 99%;
+  height: 6em;
 }
 
 @keyframes spin {
@@ -118,13 +149,14 @@ header {
 }
 
 #myName {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Crete Round', Times;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
   letter-spacing: 0.37px;
   text-align: left;
   color: #ff6b00;
+  width: 100%;
 }
 
 .mission-cards {
@@ -150,22 +182,28 @@ header {
 .element {
   width: fit-content;
   color: #fff;
+  padding: 7px;
 }
 
 .card {
   background-color: #1c1a19;
   border-radius: 12px;
+  color: #fff;
+  position: relative;
   padding: 10px;
   margin: 10px;
+  width: 36%;
+}
+
+.card:hover {
+  background-color: #091e42;
 }
 
 #title {
-  height: 27px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Crete Round', Times;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  color: #fff5e1;
+  font-size: 21px;
+  color: #e6a23c;
 }
 
 #description {
@@ -183,6 +221,11 @@ header {
   align-items: center;
   width: 200px;
   height: 40px;
+}
+
+.fa-certificate,
+.fa-medal {
+  padding: 4px;
 }
 
 .iconsSection {
@@ -279,7 +322,7 @@ header {
 }
 
 .card-works {
-  background-image: url(img/Img-Placeholder1.png);
+  /* background-image: url(img/Img-Placeholder1.png); */
   display: grid;
   gap: 17px;
 }
@@ -325,6 +368,11 @@ header {
   height: 48px;
   background: #ff6b00;
   color: #fff;
+}
+
+.missionCard-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about {
@@ -380,6 +428,10 @@ header {
   margin-top: 50%;
 }
 
+.resume-svg {
+  width: 12%;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -387,6 +439,8 @@ header {
   gap: 24px;
   color: #fff;
   width: 100%;
+  background-color: #1c1a19;
+  padding: 10px;
 }
 
 .listtopography {
@@ -451,6 +505,24 @@ header {
   align-items: flex-start;
   padding: 50px 24px;
   gap: 58px;
+}
+
+.cosection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  flex-wrap: wrap;
+}
+
+.counter-section {
+  background-color: #091e42;
+  display: flex;
+  padding: 1%;
+  border-radius: 3%;
+  color: #fff;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 14px;
 }
 
 .contact-text {
@@ -571,10 +643,6 @@ fieldset {
   border-bottom-style: solid;
 }
 
-a {
-  text-decoration: none;
-}
-
 #menu-close {
   color: rgba(151, 148, 147, 1);
   text-align: end;
@@ -584,6 +652,7 @@ a {
 
 .dropdown-menu {
   padding: 13px;
+  display: contents !important;
 }
 
 .dropdown-menuShow {
@@ -631,7 +700,6 @@ a {
   left: 50%;
   width: 77%;
   transform: translate(-50%, -50%);
-  overflow: scroll;
 }
 
 .project-img {
@@ -668,7 +736,7 @@ a {
 
 #modalDescription {
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Times;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -715,6 +783,11 @@ a {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 2px;
+  padding: 10px;
+}
+
+.recent-works {
+  padding-top: 33px;
 }
 
 /* .img-fluid {
@@ -725,7 +798,16 @@ a {
 .icons-sctn {
   display: flex;
   gap: 20px;
-  margin-left: 18px;
+}
+
+.fas {
+  padding: 5px !important;
+}
+
+.icons-prof {
+  border-radius: 18%;
+  padding: 5px;
+  background-color: #000;
 }
 
 .about-video {
@@ -738,39 +820,268 @@ a {
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease;
+  height: 131%;
 }
 
 .imgslider-cards.active {
   opacity: 1;
 }
 
+.prof-tag {
+  font-size: 15px;
+  font-family: serif;
+}
+
+p {
+  font-family: 'Poppins', Times;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.professional-footer {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.section-content h2 {
+  font-family: emoji, sans-serif;
+  font-weight: 550;
+  padding: 20px 0 12px 0;
+}
+
+h1 {
+  font: caption;
+}
+
+.section-content h1 {
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #ff6b00;
+}
+
+.about-btn button {
+  background-color: #ff6b00;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  border-radius: 250%;
+  animation: btn-slide 4s ease-in-out;
+}
+
+.about-btn button:hover {
+  padding: 20px;
+  border-radius: 200%;
+  cursor: pointer;
+}
+
+.article-card {
+  width: 30%;
+  max-height: 40em;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #616161;
+  padding: 20px;
+}
+
+.article-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+@keyframes btn-slide {
+  from {
+    right: -100px;
+  }
+
+  to {
+    right: 20px;
+  }
+}
+
 @media (min-width: 768px) {
+  .imgslider-cards {
+    height: 97% !important;
+  }
+
+  .company-brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .missionCard-container {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    right: -28%;
+  }
+
+  .blog-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-link {
+    margin-top: 10px;
+  }
+
+  .professional-footer {
+    margin-left: 11%;
+    margin-top: 2%;
+  }
+
+  .prof-icons {
+    border: 2px solid #091e42;
+    padding: 9px;
+    border-radius: 100%;
+    background-color: #000;
+  }
+
+  .section-pic {
+    width: 24%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    animation: slide-left 3s ease-in-out;
+  }
+
+  .section-pic .border {
+    position: absolute;
+    top: 0;
+    left: -53px;
+    width: 100%;
+    height: 49%;
+    border-radius: 81%;
+    border: 49px solid transparent;
+    animation: borderRotate 10s linear infinite alternate;
+    pointer-events: none;
+    border-style: dashed;
+  }
+
+  .section-pic img {
+    max-width: 100% !important;
+    border-radius: 81%;
+    position: relative;
+    z-index: 1;
+    padding: 14px;
+    margin-left: 0;
+  }
+
+  @keyframes borderRotate {
+    0% {
+      transform: rotate(0deg);
+      border-color: #7bff00;
+    }
+
+    20% {
+      transform: rotate(20deg);
+      border-color: #7706f8f4;
+    }
+
+    40% {
+      transform: rotate(20deg);
+      border-color: #f80606;
+    }
+
+    60% {
+      transform: rotate(20deg);
+      border-color: #f87f06f4;
+    }
+
+    80% {
+      transform: rotate(20deg);
+      border-color: hsl(238, 100%, 39%);
+    }
+
+    100% {
+      transform: rotate(360deg);
+      border-color: #c800ff;
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .section-content p {
+    width: 72%;
+  }
+
+  .section-content {
+    width: 48%;
+  }
+
+  .article-card {
+    width: fit-content;
+  }
+
+  #recent-blogs {
+    display: flex;
+    flex-direction: column !important;
+  }
+
   .card {
     background-color: #1c1a19d4;
     border-radius: 12px;
     padding: 10px;
     margin: 10px;
-    width: 20%;
-    height: fit-content;
+    width: 40%;
+    height: 10em;
     position: relative;
-    top: 102px;
+    top: 6px;
     right: -465px;
-    animation: 10s card-slide;
+    animation: 3s card-slide;
   }
 
   @keyframes card-slide {
     from {
-      margin-left: -150%;
+      margin-top: -418px;
     }
 
     to {
-      margin-left: 0%;
+      margin-bottom: 0%;
     }
   }
 
   .professional {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
@@ -797,8 +1108,9 @@ a {
   .mission-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
-    height: 35em;
+    height: 45em;
     position: relative;
     overflow: hidden;
   }
@@ -922,7 +1234,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 130px 0;
     gap: 24px;
     width: 44%;
     margin-left: 7%;
