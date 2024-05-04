@@ -6,6 +6,16 @@
 li {
   list-style: none;
 }
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
 
 #content {
   display: none;
@@ -137,7 +147,7 @@ header {
   background-position-y: 180px;
   background-position: right;
 }
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
 #myName {
   font-family: 'Crete Round', Times;
   font-size: 56px;
@@ -146,6 +156,7 @@ header {
   letter-spacing: 0.37px;
   text-align: left;
   color: #ff6b00;
+  width: 100%;
 }
 
 .mission-cards {
@@ -181,7 +192,7 @@ header {
   position: relative;
   padding: 10px;
   margin: 10px;
-  width: 40%;
+  width: 36%;
 }
 
 .card:hover {
@@ -189,11 +200,9 @@ header {
 }
 
 #title {
-  height: 31px;
   font-family: 'Crete Round', Times;
   font-weight: 400;
   font-size: 21px;
-  line-height: 30px;
   color: #e6a23c;
 }
 
@@ -212,6 +221,11 @@ header {
   align-items: center;
   width: 200px;
   height: 40px;
+}
+
+.fa-certificate,
+.fa-medal {
+  padding: 4px;
 }
 
 .iconsSection {
@@ -719,7 +733,7 @@ fieldset {
   width: auto;
   height: 14px;
 }
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
 #modalDescription {
   color: #344563;
   font-family: 'Inter', Times;
@@ -769,6 +783,11 @@ fieldset {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 2px;
+  padding: 10px;
+}
+
+.recent-works {
+  padding-top: 33px;
 }
 
 /* .img-fluid {
@@ -781,6 +800,16 @@ fieldset {
   gap: 20px;
 }
 
+.fas {
+  padding: 5px !important;
+}
+
+.icons-prof {
+  border-radius: 18%;
+  padding: 5px;
+  background-color: #000;
+}
+
 .about-video {
   width: 100%;
   height: 25em;
@@ -791,7 +820,7 @@ fieldset {
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease;
-  height: 68%;
+  height: 131%;
 }
 
 .imgslider-cards.active {
@@ -804,7 +833,9 @@ fieldset {
 }
 
 p {
-  font-family: serif;
+  font-family: 'Poppins', Times;
+  font-weight: 100;
+  font-size: 14px;
 }
 
 .professional-footer {
@@ -815,7 +846,7 @@ p {
 .section-content h2 {
   font-family: emoji, sans-serif;
   font-weight: 550;
-  padding: 5px 0 12px 0;
+  padding: 20px 0 12px 0;
 }
 
 h1 {
