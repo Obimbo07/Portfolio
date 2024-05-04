@@ -5,19 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale= 1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="Austin">
-        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
-    </head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">    </head>
     <body>
+      <div id="loader"></div>
+        <section id="content">
         <header>
           <div class="logo-container">
-            <a href="#"><h3 id="logo">My Logo</h3></a>
+            <a href="/"><h3 id="logo">🅰🆄🆂🆃🅸🅽</h3></a>
           </div>
           <div class="drop-down" id="navMenu">
             <ul class="dropdown-menu">
              <h1 aria-hidden="true" id="menu-close" onclick="closeMenu()">&times;</h1>
-             <a href="#Home"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Portfolio</li> </a>
+             <a href="#Home"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Home</li> </a>
+             <a href="/articles.html"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Articles</li> </a>
              <a href="#About"><li class="menu-link" id="nav-btn" onclick="closeMenu()">About</li> </a>
+             <a href="#Certificates"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Certificates</li></a>
              <a href="#Contact"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Contact</li> </a>
             </ul>
           </div>
@@ -26,9 +30,11 @@
             <img class="hamberger" id="ham" onclick="openMenu()" src="img/IconMenu.png">
             </label>
             <ul class="nav-link">
-              <a class="navbtn" href="#Home">  <li class="navbtn">Portfolio</li> </a>
-              <a class="navbtn" href="#About"> <li  >About</li></a>
-              <a class="navbtn" href = "#Contact"> <li  >Contact</li></a>
+              <a class="navbtn" href="#Home"><li class="navbtn">Portfolio</li> </a>
+              <a class="navbtn" href="/articles.html"><li class="navbtn">Articles</li> </a>
+              <a class="navbtn" href="#About"><li>About</li></a>
+              <a class="navbtn" href="#Certificates"><li>Certificates</li></a>
+              <a class="navbtn" href="#Contact"><li>Contact</li></a>
               <img class="inbox" src="img/Union.png">
             </ul>
           </nav>
@@ -37,19 +43,24 @@
             <div class="container">
                 <h1 id="myName">
                     Hey There.
-                    <br>
-                    I'm Austine.
+                    I'm Austine Obimbo.
                 </h1>
-                 <p id="title">I'm a Software Developer</p>
-                 <p id="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                   don’t hesitate to contact me.</p>
+                 <p id="title"><i class="fa-solid fa-certificate" ></i>Certified Full-Stack Software Engineer</p>
+                 <p id="title"><i class="fa-solid fa-certificate" ></i>Vetted Data Operations Analysts</p>
+                 <p id="title"><i class="fa-solid fa-medal"></i>Volunteer Mentor</p>
+                 <p id="description">My perpetual architecture empowers me to make data-driven decisions, 
+                  allowing me to consistently enhance product quality and performance. Quality consience with an urge to grow and within collaboration I bring a sparkling light to teams.
+                 </p>
+                 <div class="about-btn">
+                  <button type="button" class="btn">About me</button>
+                 </div>
                 <div class="socials">
                    <ul class="iconsSection">
                         <li class="icons">
                             <a href="https://github.com/Obimbo07" ><img src="img/github.svg" alt="GitHub" /></a>
                         </li>
                         <li class="icons">
-                            <a href="https://www.linkedin.com/in/austin-obimbo-9a613623a/"  ><img src="img/Linkedin icon.svg" alt="LinkedIn" /></a>
+                            <a href="https://www.linkedin.com/in/austin-obimbo/"  ><img src="img/Linkedin icon.svg" alt="LinkedIn" /></a>
                         </li>
                         <li class="icons">
                             <a href=""><img src="img/angel list.svg" alt="angel" /></a>
@@ -60,10 +71,134 @@
                         <li class="icons">
                             <a href=""><img src="img/medium.svg" alt="Medium" /></a>
                         </li>
+                        <li class="icons">
+                           <a href="https://docs.google.com/document/d/1fTpnB8prhz1VXJe4VMbI5VFD1JmdrqohntdfoZMzqXw/edit?usp=sharing"><img class="resume-svg img-fluid" src="img/profle.svg" alt="Resume" /></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
+        <section>
+          <div class="mission-cards">
+            <img class="imgslider-cards" src="/img/about.jpg" alt="" />
+            <img class="imgslider-cards" src="/img//vision.jpg" alt="" />
+            <div class="missionCard-container">
+             <div class="card">
+              <h5>Full-stack Development</h5>
+               <p>I offer comprehensive development services remotely and onsite, specializing in full-stack development.</p>
+              
+             </div>
+             <div class="card ">
+              <h4>Data Operations Analysts</h4>
+              <p>With expertise in data operations, I excel in making data-driven decisions for greater scalability and profitability.</p>
+              
+             </div>
+             <div class="card">
+              <h4>Testing and optimization</h4>
+              <p>I specialize in Test Driven Development (TDD) and optimization techniques to ensure the reliability and efficiency of software products.</p>
+            
+             </div>
+             <div class="card">
+              <h4>Team spirit</h4>
+              <p>I thrive in collaborative environments, demonstrating strong team leadership and fostering a positive team spirit.</p>
+             
+             </div>
+             <div class="card">
+              <h4>Software Architecture</h4>
+              <p>I thrive in collaborative environments, demonstrating strong team leadership and fostering a positive team spirit.</p>
+              
+             </div>
+             <div class="card">
+              <h4>Mentorship and Community Building</h4>
+              <p>I offer guidance and familiarity to aspiring developers for growth and success in tech.</p>
+             </div>
+             </div>
+          </div>
+        </section>
+        <section class="col professional">
+          <div class="recent-works">
+            <h2>Professional Summary</h2>
+            <hr class="works-break">
+        </div>
+          <div class="section-pic">
+            <div class="border"></div>
+            <img src="/img/passport.jpeg" alt="Austin professional picture">
+          </div>
+          <div class="section-content">
+              <h2>Introduction</h2>
+              <p>My name is Austin Obimbo. I am a proactive techprenuer & team leader with 2 years experience as a professional developer. I have been able to build and 
+                collaborate on high scaled projects.I love travelling, exploring nature, doing research.</p>
+      
+              <h2>Skills</h2>
+              <ul class="summaryskills">
+                <li><i class="fas fa-check-circle"></i><strong>FrontEnd:</strong>React, React Native, Wordpress, HTML, CSS </li>
+                <li><i class="fas fa-check-circle"></i><strong>Backend:</strong>Ruby on Rails, postgreSQL, MySQL, API development</li>
+                <li><i class="fas fa-check-circle"></i><strong>Professional skills:</strong>Data operations analyst, Test & Agile driven development, Problem Solving, Project Management</li>
+                <li><i class="fas fa-check-circle"></i><strong>Developer Tools:</strong>Zoom, Slack, Airtable, Kanban Boards</li>
+              </ul>
+
+              <h2>Projects</h2>
+              <p>I have developed software and projects in the following fields:</p>
+              <ul class="summaryskills">
+                <li><i class="fas fa-check-circle"></i>Content Management Services</li>
+                <li><i class="fas fa-check-circle"></i>User Authentication systems</li>
+                <li><i class="fas fa-check-circle"></i>Software as a Service SAAS</li>
+                <li><i class="fas fa-check-circle"></i>API  development & Intergration</li>
+                <li><i class="fas fa-check-circle"></i>Data analysis and operations</li>
+              </ul>
+      
+              <h2>Training & Experience</h2>
+              <p>I have gained most of my skills and knowledge as a self-taught student, and from online bootcamps like Microverse and Coursera. I dedicated 2000+ hours into acquring knowledge and hands-on experience 
+                through remote collaboration and pair-programming with individuals in diffrent time-zones. 
+              </p>
+      
+              <h2>Volunteer</h2>
+              <p>Throughout the program i have had the ability to mentor fellow teammates and non-techies. 
+                Helping them solve complex promblems, develop soft-skills, handling software architecture and design.My knowledge has shown light to the mentee and this 
+               makes me happy and motivates me more</p>
+          </div>
+
+          <div class="professional-footer">
+          <ul class="icons-sctn">
+          <li class="prof-icons">
+              <a href="https://github.com/Obimbo07" ><img class="icons-prof" src="img/github.svg" alt="GitHub" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href="https://www.linkedin.com/in/austin-obimbo-9a613623a/"  ><img class="icons-prof" src="img/Linkedin icon.svg" alt="LinkedIn" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href=""><img class="icons-prof" src="img/angel list.svg" alt="angel" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href=""><img class="icons-prof" src="img/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li class="prof-icons">
+              <a href=""><img class="icons-prof" src="img/medium.svg" alt="Medium" /></a>
+          </li>
+      </ul>
+       <h2 class="prof-name">Austin Obimbo</h2>
+       <h1 class="prof-tag">SOFTWARE ENGINEER, FULL-STACK WEB DEVELOPER</h1>
+       <p class="prof-quote">I believe in creating a better tommorrow by bettering our everyday life</p>
+      </div>
+      </section>
+      <section class="cosection">
+          <div class="counter-section">
+              <h2>Projects</h2>
+              <p id="Counter">20</p>
+          </div>
+          <div class="counter-section">
+              <h2>Clients</h2>
+              <p id="Counter">30</p>
+          </div>
+          <div class="counter-section">
+              <h2>Years</h2>
+              <p id="Counter">8</p>
+          </div>
+          <div class="counter-section">
+              <h2>Mentees</h2>
+              <p id="Counter">8</p>
+          </div>
+      </section>
        <section id="projects" class="works">
         <div class="recent-works">
             <h2 id="works-title">My Recent Works</h2>
@@ -72,25 +207,23 @@
         
         <div id="grid-container">
             <div class="recent-project">
-              <img class="project-img" src="img/Olay .png" alt="Olay company desktop view"/>
+              <img class="project-img" src="img/Trip.jfif" alt="Olay company desktop view"/>
               <div class="right-block">
-                <h2 class="title-post">Olay Company</h2>
-                <p class="posts-description">Olay Company is an african based organization that offers online jobs to most of its clients. The company offers three services ranging from: Earning from online marketing, Money investment platform and a business to business link system.</p>
+                <h2 class="title-post">Book Destinaton</h2>
+                <p class="posts-description">This Full stack application helps users book holiday, meeting and home destinations, in various places. Users have can perform CRUD operations on the destinations.</p>
                <ul class="tech-skills">
-                <li class="skillset">CSS</li>
-                <li class="skillset">HTML</li>
-                <li class="skillset">Bootstrap</li>
+                <li class="skillset">React</li>
+                <li class="skillset">API</li>
                 <li class="skillset">Ruby</li>
                </ul>
                <button type="button" class="project-view" class="card-btn" id="openModalBtn">See project</button>
              </div>
             </div>
          </div>
-             <!---- flexbox individual cards -->
             
        </section>
        <section id="projectsSection" class="grid-container cards-box">
-        <!-- Projects will be dynamically created here -->
+  
       </section>
        <div id="modalOverlay">
         <div id="modalContent">
@@ -105,9 +238,21 @@
           <span id="closeModalBtn">&times;</span>
         </div>
       </div>
+      <section class="vetted-section">
+        <div class="company-brands">
+          <h1>Certified and vetted By</h1>
+           <div class="brands">
+            <a href="#"><img src="/img/coursera-logo.png" alt="coursera-logo" /></a>
+              <a href="#"><img src="/img/microverse-logo.png" alt="microverse-logo" /></a>
+              <a href="#"><img src="/img/turing.png" alt="Turing logo" /></a>
+              <a href="#"><img src="/img//udacity.png" alt="Udacity logo" /></a>
+           </div>
+        </div>
+      </section>
        <section class="about" id="About">
         <div class="about-me">
             <h2 class="about-title">About me</h2>
+            <iframe class="about-video" src="https://www.loom.com/embed/bfcd8b134e944dc4ad7797251b55ecef?sid=00211d1c-31e3-48ea-8553-d522cf4da28a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             <button type="button" onclick="location.href = 'https://drive.google.com/file/d/14oawHPuNXChYYcxJ_On0InIbBeMjd5ML/view?usp=share_link'" target = "_blank" class="resume">Get my resume</button>
           </div>
@@ -133,6 +278,7 @@
                   </li>
                   <ul class="mini-list">
                     <li class="detail">React.js</li>
+                    <li class="detail">React Native</li>
                     <li class="detail">Ruby on rails</li>
                     <li class="detail">RSpec</li>
                     <li class="detail">Capybara</li>
@@ -154,6 +300,36 @@
               </ul>
           </div>
        </section>
+       <section class="blog-part">
+        <div id="recent-blogs">
+          <article class="article-card">
+            <div class="article-image">
+              <img src="/img/technology.jpg" class="img-fluid" alt="Article Image">
+            </div>
+            <div class="article-content">
+              <h2>Impact of AI on Programmers: Navigating Standard Shifts</h2>
+              <p>As a human being, one has been endowed with just enough intelligence to be able to see clearly</p>
+              <a href="https://medium.com/@obimboausts/impact-of-ai-on-programmers-navigating-standard-shifts-0e61830570cd" class="read-more">Read More</a>
+            </div>
+          </article>
+          
+          <article class="article-card">
+            <div class="article-image">
+              <img src="/img/gas.png" class="img-fluid" alt="AI and man image">
+            </div>
+            <div class="article-content">
+              <h2>Guiding the Next Generation: A Mentor’sThoughts!!</h2>
+              <p>Mentoring juniors and non-techies into the world of software development is a journey fraught with challenges and rewards.</p>
+              <a href="full_article.html" class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="blog-link">
+          <a type="button" class="btn color-white mx-auto" role="button">View more</a>
+        </div>
+      </section>
+      
+      
        <section class="bottom-footer" id="Contact">
            <div class="contact-section">
               <p class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
@@ -193,8 +369,14 @@
                     <a href=""><img class="icon-bg" src="img/Vector-6.png" alt="GitHub" /></a>
                 </li>
             </ul>
-        </div>
-         <hr class="footer-breaker">
-         <script src="index.js"></script>
+            <hr class="footer-breaker">
+          </section>
+     <script src="https://kit.fontawesome.com/2094a85d2e.js" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+     <script src="index.js"></script>
+     <script async src="articles.js"></script>
     </body>
 </html>
