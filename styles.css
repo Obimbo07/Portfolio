@@ -820,7 +820,7 @@ fieldset {
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease;
-  height: 131%;
+  height: 55%;
 }
 
 .imgslider-cards.active {
@@ -913,6 +913,15 @@ h1 {
   to {
     right: 20px;
   }
+}
+
+.prjct-banner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.prjct-img {
+  width: 220px;
 }
 
 @media (min-width: 768px) {
@@ -1047,12 +1056,14 @@ h1 {
   }
 
   .article-card {
-    width: fit-content;
+    width: 30%;
+    display: flex;
   }
+
 
   #recent-blogs {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: row !important;
   }
 
   .card {
@@ -1207,6 +1218,10 @@ h1 {
 
   .card-btn:hover {
     background-color: rgb(221, 137, 10);
+  }
+
+  .card-works {
+    height: max-content;
   }
 
   .card-works:hover .card-btn {
