@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+.technologies-title {
+ text-align: center;
+}
+
 .section-pic img {
   max-width: 45%;
   border-radius: 100%;
@@ -435,7 +439,7 @@ header {
 .about-breaker {
   border: 1px solid #fff;
   width: 100%;
-  margin-top: 50%;
+  margin-top: 6%;
 }
 
 .resume-svg {
@@ -484,6 +488,20 @@ header {
   line-height: 44px;
   letter-spacing: 0;
   text-align: center;
+}
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.tech-icon {
+  width: 20%;
+  height: 5em;
+  background-color: #8e8e8e;
 }
 
 #skills {
@@ -943,6 +961,24 @@ h1 {
 .prjct-img {
   width: 220px;
 }
+
+.space-video-container {
+  overflow: hidden;
+  z-index: -1;
+}
+
+.technologies img {
+  padding: 10px;
+}
+.programming-icon {
+  position: absolute;
+  transform: translate(2px, -103%);
+  color: #fff;
+  padding: 10px;
+}
+/* .technologies  {
+  background-color: #fffefe;
+} */
 
 @media (min-width: 768px) {
   .imgslider-cards {
