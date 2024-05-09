@@ -52,10 +52,17 @@ a {
   margin-bottom: 10px;
 }
 
-.brands a img {
-  width: 99%;
-  height: 6em;
+.brands  img {
+  width: 15%;
+  height: 4em;
+  padding: 8px;
 }
+
+.brands {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -315,6 +322,7 @@ header {
 
 .cards-box {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   padding: 0 24px;
@@ -325,6 +333,8 @@ header {
   /* background-image: url(img/Img-Placeholder1.png); */
   display: grid;
   gap: 17px;
+  border-radius: 2%;
+  padding: 1%;
 }
 
 .card-title {
@@ -662,8 +672,6 @@ fieldset {
 
 /* Styles for the popup */
 .project-card {
-  padding: 20px;
-  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -703,7 +711,7 @@ fieldset {
 }
 
 .project-img {
-  width: 100%;
+  width: 35%;
 }
 
 #modalImage {
@@ -896,6 +904,18 @@ h1 {
   margin-bottom: 15px;
 }
 
+/* Add your CSS styles for project cards and slider here */
+.project-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust column count as needed */
+}
+
 .read-more {
   color: blue;
   text-decoration: none;
@@ -938,7 +958,6 @@ h1 {
   .brands {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
   }
@@ -974,6 +993,11 @@ h1 {
     background-color: #000;
   }
 
+  .brands img {
+    width: 11%;
+    height: 6em;
+  }
+
   .section-pic {
     width: 24%;
     position: relative;
@@ -1003,6 +1027,11 @@ h1 {
     z-index: 1;
     padding: 14px;
     margin-left: 0;
+  }
+
+  .project-card {
+    width: 32%;
+    height:auto;
   }
 
   @keyframes borderRotate {
@@ -1179,27 +1208,30 @@ h1 {
   }
 
   .project-img {
-    width: 68%;
+    width: 35%;
   }
 
   .recent-project {
     display: flex;
     flex-direction: row;
-    margin-left: 11%;
-    margin-right: 11%;
+    margin-left: 17%;
+    margin-right: -17%;
   }
 
   .right-block {
-    width: min-content;
+    width: 27%;
     gap: 27px;
   }
 
   .cards-box {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     border: 0 solid #ccc;
+    align-items: baseline;
   }
 
   .posts-description {
@@ -1218,10 +1250,6 @@ h1 {
 
   .card-btn:hover {
     background-color: rgb(221, 137, 10);
-  }
-
-  .card-works {
-    height: max-content;
   }
 
   .card-works:hover .card-btn {

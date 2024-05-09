@@ -170,14 +170,14 @@ function openModal(project) {
 
   modalOverlay.style.display = 'block';
 }
-// background-image: url(${project.image});
+
 function createProjectCard(project, index) {
   const desc = project.description.substring(0, 100);
   const card = document.createElement('div');
   card.classList.add('project-card');
 
   const cardContent = `
-  <div class="card-works" style="background-color: black; background-position: top; background-size: contain; background-repeat: no-repeat; height: max-content;">
+  <div class="card-works" style="background-color: black; background-position: top; background-size: contain; background-repeat: no-repeat;">
   <div class="prjct-banner">
     <h2 class="card-title">${project.name}</h2>
     <img class="prjct-img" src="${project.image}" >
@@ -215,9 +215,10 @@ closeModalBtn.addEventListener('click', () => {
   closeModal();
 });
 
-projects.slice(1).forEach((project, index) => {
+projects.slice(1, 6).forEach((project, index) => {
   createProjectCard(project, index + 1);
 });
+
 /* ---- validation form ----- */
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
