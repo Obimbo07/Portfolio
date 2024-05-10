@@ -41,7 +41,7 @@ a {
 }
 
 .technologies-title {
- text-align: center;
+  text-align: center;
 }
 
 .section-pic img {
@@ -56,7 +56,7 @@ a {
   margin-bottom: 10px;
 }
 
-.brands  img {
+.brands img {
   width: 15%;
   height: 4em;
   padding: 8px;
@@ -66,7 +66,6 @@ a {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -490,6 +489,7 @@ header {
   letter-spacing: 0;
   text-align: center;
 }
+
 .technologies {
   display: flex;
   flex-direction: row;
@@ -497,13 +497,12 @@ header {
   justify-content: space-around;
   align-items: flex-start;
   gap: 10px;
-  padding: 18px
+  padding: 18px;
 }
 
 .technologies-header {
   font-size: 2em;
 }
-
 
 .tech-icon {
   width: 14%;
@@ -698,6 +697,9 @@ fieldset {
 
 /* Styles for the popup */
 .project-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
@@ -916,7 +918,7 @@ h1 {
   vertical-align: top;
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
 }
 
 .article-content h2 {
@@ -929,11 +931,6 @@ h1 {
 }
 
 /* Add your CSS styles for project cards and slider here */
-.project-card {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease;
-}
 
 .grid-container {
   display: grid;
@@ -983,16 +980,17 @@ h1 {
   color: #fff;
   padding: 10px;
 }
+
 /* .technologies  {
   background-color: #fffefe;
 } */
 
 .view-more-projects {
   position: relative;
-    left: 38%;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10%
+  left: 38%;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10%;
 }
 
 .bookings {
@@ -1014,8 +1012,8 @@ h1 {
   background-color: #ff6b00;
   color: #000;
 }
+
 @media (min-width: 768px) {
-  
   .space-video-container video {
     width: 100%;
   }
@@ -1029,7 +1027,7 @@ h1 {
     transform: translate(8%, -139%);
     width: 80%;
   }
- 
+
   .imgslider-cards {
     height: 97% !important;
   }
@@ -1122,7 +1120,7 @@ h1 {
 
   .project-card {
     width: 32%;
-    height:auto;
+    height: auto;
   }
 
   @keyframes borderRotate {
@@ -1181,7 +1179,6 @@ h1 {
     align-items: center;
     gap: 5px;
   }
-
 
   #recent-blogs {
     display: flex;
@@ -1362,7 +1359,7 @@ h1 {
 
   .about {
     border-radius: 0;
-    padding: 130px 0 0px 0;
+    padding: 130px 0 0 0;
     background-image: url(img/Frame1.png);
     background-position-y: 14%;
     background-size: 48%;
