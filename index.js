@@ -51,9 +51,9 @@ closeMenu();
 const projects = [
   {
     index: 0,
-    name: 'Olay Company',
-    description: 'This company is based in Vietnam and offers online jobs to its clients, I created it using PHP frameworks, The Company has an inbuilt e-commerce store. Using Software as a service, (SAS) olay company allows its clients to earn a stable wage daily and also a good money market Fund for all your goals and achievments. Olay also has an online customer support system intergrated with TAWK.io. Check it out and experience what olay has to offer',
-    technologies: ['PHP Frameworks'],
+    name: 'Book Destination',
+    description: 'This Full stack application helps users reserve holiday, meeting and BNB destinations, in various places. Users have can perform CRUD operations on the destinations.',
+    technologies: ['Ruby on Rails', 'React/Redux'],
     image: 'img/Olay .png',
     liveLink: 'https://www.olaycompany.com',
     sourceLink: 'Not Sourced on Github',
@@ -103,6 +103,33 @@ const projects = [
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
   },
+  {
+    index: 6,
+    name: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    image: 'img/projects.png',
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
+  {
+    index: 7,
+    name: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    image: 'img/projects.png',
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
+  {
+    index: 8,
+    name: 'Multi Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    image: 'img/projects.png',
+    liveLink: 'https://example.com/project1',
+    sourceLink: 'https://github.com/user/project1',
+  },
   // Add more project objects as needed
 ];
 
@@ -143,15 +170,20 @@ function openModal(project) {
 
   modalOverlay.style.display = 'block';
 }
-// background-image: url(${project.image});
+
 function createProjectCard(project, index) {
+  const desc = project.description.substring(0, 100);
   const card = document.createElement('div');
   card.classList.add('project-card');
 
   const cardContent = `
-  <div class="card-works" style="background-position: top; background-size: contain; background-repeat: no-repeat;">
-  <h2 class="card-title">${project.name}</h2>
-  <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
+  <div class="card-works" style="background-color: black; background-position: top; background-size: contain; background-repeat: no-repeat;">
+  <div class="prjct-banner">
+    <h2 class="card-title">${project.name}</h2>
+    <img class="prjct-img" src="${project.image}" >
+  </div>
+
+  <p class="card-description">${desc}...</p>
   <ul class="card-techskills">
     <li class="card-skillset">HTML</li>
     <li class="card-skillset">Bootstrap</li>
@@ -183,9 +215,10 @@ closeModalBtn.addEventListener('click', () => {
   closeModal();
 });
 
-projects.forEach((project, index) => {
-  createProjectCard(project, index);
+projects.slice(1, 6).forEach((project, index) => {
+  createProjectCard(project, index + 1);
 });
+
 /* ---- validation form ----- */
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {

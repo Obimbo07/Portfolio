@@ -27,7 +27,7 @@ function renderArticles() {
         <img src="${article.image}" class="img-fluid" alt="Article Image">
       </div>
       <div class="article-content">
-        <h2>${article.name}</h2>
+        <h3>${article.name}</h3>
         <p>${article.description}</p>
         <a href="${article.link}" class="read-more">Read More</a>
       </div>

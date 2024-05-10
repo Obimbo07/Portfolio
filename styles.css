@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+.technologies-title {
+  text-align: center;
+}
+
 .section-pic img {
   max-width: 45%;
   border-radius: 100%;
@@ -52,9 +56,15 @@ a {
   margin-bottom: 10px;
 }
 
-.brands a img {
-  width: 99%;
-  height: 6em;
+.brands img {
+  width: 15%;
+  height: 4em;
+  padding: 8px;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @keyframes spin {
@@ -306,15 +316,17 @@ header {
 }
 
 .project-view {
-  padding: 12px;
+  padding: 29px;
   font-family: 'Inter', sans-serif;
   background: #ff6b00;
   color: #fff;
   border: 0;
+  font-size: larger;
 }
 
 .cards-box {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   padding: 0 24px;
@@ -325,6 +337,8 @@ header {
   /* background-image: url(img/Img-Placeholder1.png); */
   display: grid;
   gap: 17px;
+  border-radius: 2%;
+  padding: 1%;
 }
 
 .card-title {
@@ -425,7 +439,7 @@ header {
 .about-breaker {
   border: 1px solid #fff;
   width: 100%;
-  margin-top: 50%;
+  margin-top: 6%;
 }
 
 .resume-svg {
@@ -474,6 +488,27 @@ header {
   line-height: 44px;
   letter-spacing: 0;
   text-align: center;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px;
+}
+
+.technologies-header {
+  font-size: 2em;
+}
+
+.tech-icon {
+  width: 14%;
+  height: 5em;
+  background-color: #fdfdfdb8;
+  border-radius: 18px;
 }
 
 #skills {
@@ -662,8 +697,9 @@ fieldset {
 
 /* Styles for the popup */
 .project-card {
-  padding: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
@@ -703,7 +739,7 @@ fieldset {
 }
 
 .project-img {
-  width: 100%;
+  width: 35%;
 }
 
 #modalImage {
@@ -820,7 +856,7 @@ fieldset {
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease;
-  height: 131%;
+  height: 55%;
 }
 
 .imgslider-cards.active {
@@ -877,14 +913,12 @@ h1 {
 }
 
 .article-card {
-  width: 30%;
   max-height: 40em;
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
   margin-bottom: 20px;
-  background-color: #616161;
   padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
 }
 
 .article-content h2 {
@@ -894,6 +928,13 @@ h1 {
 
 .article-content p {
   margin-bottom: 15px;
+}
+
+/* Add your CSS styles for project cards and slider here */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust column count as needed */
 }
 
 .read-more {
@@ -915,7 +956,78 @@ h1 {
   }
 }
 
+.prjct-banner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.prjct-img {
+  width: 220px;
+}
+
+.space-video-container {
+  overflow: hidden;
+  z-index: -1;
+}
+
+.technologies img {
+  padding: 10px;
+}
+
+.programming-icon {
+  position: absolute;
+  transform: translate(2px, -120%);
+  color: #fff;
+  padding: 10px;
+}
+
+/* .technologies  {
+  background-color: #fffefe;
+} */
+
+.view-more-projects {
+  position: relative;
+  left: 38%;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.bookings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #3c3a39;
+}
+
+.book {
+  color: #7bff00;
+  background-color: #091e42;
+  text-align: center;
+  padding: 2px;
+  font-size: 25px;
+}
+
+.book:hover {
+  background-color: #ff6b00;
+  color: #000;
+}
+
 @media (min-width: 768px) {
+  .space-video-container video {
+    width: 100%;
+  }
+
+  .technologies-header {
+    font-size: 4em;
+    line-height: 2;
+  }
+
+  .programming-icon {
+    transform: translate(8%, -139%);
+    width: 80%;
+  }
+
   .imgslider-cards {
     height: 97% !important;
   }
@@ -929,7 +1041,6 @@ h1 {
   .brands {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
   }
@@ -950,7 +1061,13 @@ h1 {
   }
 
   .blog-link {
-    margin-top: 10px;
+    margin-top: 39px;
+  }
+
+  .blog-link a {
+    padding: 28px;
+    border-radius: 4%;
+    color: #fff;
   }
 
   .professional-footer {
@@ -963,6 +1080,11 @@ h1 {
     padding: 9px;
     border-radius: 100%;
     background-color: #000;
+  }
+
+  .brands img {
+    width: 11%;
+    height: 6em;
   }
 
   .section-pic {
@@ -979,7 +1101,7 @@ h1 {
     top: 0;
     left: -53px;
     width: 100%;
-    height: 49%;
+    height: 42%;
     border-radius: 81%;
     border: 49px solid transparent;
     animation: borderRotate 10s linear infinite alternate;
@@ -994,6 +1116,11 @@ h1 {
     z-index: 1;
     padding: 14px;
     margin-left: 0;
+  }
+
+  .project-card {
+    width: 32%;
+    height: auto;
   }
 
   @keyframes borderRotate {
@@ -1047,12 +1174,17 @@ h1 {
   }
 
   .article-card {
-    width: fit-content;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 
   #recent-blogs {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .card {
@@ -1168,27 +1300,30 @@ h1 {
   }
 
   .project-img {
-    width: 68%;
+    width: 35%;
   }
 
   .recent-project {
     display: flex;
     flex-direction: row;
-    margin-left: 11%;
-    margin-right: 11%;
+    margin-left: 17%;
+    margin-right: -17%;
   }
 
   .right-block {
-    width: min-content;
+    width: 27%;
     gap: 27px;
   }
 
   .cards-box {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     border: 0 solid #ccc;
+    align-items: baseline;
   }
 
   .posts-description {
@@ -1224,7 +1359,7 @@ h1 {
 
   .about {
     border-radius: 0;
-    padding: 130px 0 130px 0;
+    padding: 130px 0 0 0;
     background-image: url(img/Frame1.png);
     background-position-y: 14%;
     background-size: 48%;
@@ -1240,7 +1375,7 @@ h1 {
   }
 
   .about-breaker {
-    margin: 5% 57% 5% 6%;
+    margin: 5% 57% 0% 6%;
     width: 87%;
   }
 
@@ -1295,6 +1430,12 @@ h1 {
     margin-top: 24px;
   }
 
+  .ficons {
+    padding: 8px;
+    border: 2px solid #ff6b00;
+    border-radius: 100%;
+  }
+
   .footerIcons {
     flex-direction: row;
     justify-content: center;
@@ -1303,6 +1444,11 @@ h1 {
 
   .footer {
     margin: 1% 20% 1%  10%;
+    margin: 1% 20% 1% 10%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .footer-breaker {
