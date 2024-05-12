@@ -1225,7 +1225,8 @@ h1 {
     display: flex;
     flex-direction: row;
     color: #fff;
-    gap: 3%;
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 
   .navbtn {
@@ -1234,7 +1235,7 @@ h1 {
   }
 
   nav {
-    margin-right: 11%;
+    margin-right: 47%;
   }
 
   .mission-cards {

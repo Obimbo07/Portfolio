@@ -17,7 +17,6 @@ const articles = [
 
 function renderArticles() {
   const articleSection = document.getElementById('article-section');
-
   articles.forEach((article) => {
     const card = document.createElement('article');
     card.classList.add('article-card');
