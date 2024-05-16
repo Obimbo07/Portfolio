@@ -18,12 +18,33 @@
           </div>
           <div class="drop-down" id="navMenu">
             <ul class="dropdown-menu">
-             <h1 aria-hidden="true" id="menu-close" onclick="closeMenu()">&times;</h1>
-             <a href="#Home"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Home</li> </a>
-             <a href="/articles.html"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Publications</li> </a>
-             <a href="#About"><li class="menu-link" id="nav-btn" onclick="closeMenu()">About</li> </a>
-             <a href="/certificates.html"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Certificates</li></a>
-             <a href="#Contact"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Contact</li> </a>
+              <ul class="menu-list">
+                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                  <a href="#Home">
+                    <i class="fas fa-home"></i><h6>Home</h6>
+                  </a>
+                </li>
+                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                  <a href="/articles.html">
+                    <i class="fas fa-file-alt"></i> <h6>Publications</h6>
+                  </a>
+                </li>
+                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                  <a href="#About">
+                    <i class="fas fa-info-circle"></i><h6>About</h6> 
+                  </a>
+                </li>
+                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                  <a href="/certificates.html">
+                    <i class="fas fa-certificate"></i> <h6>Certificates</h6>
+                  </a>
+                </li>
+                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                  <a href="#Contact">
+                    <i class="fas fa-envelope"></i> <h6>Contact</h6>
+                  </a>
+                </li>
+              </ul>
             </ul>
           </div>
           <nav>
@@ -31,12 +52,34 @@
             <img class="hamberger" id="ham" onclick="openMenu()" src="img/IconMenu.png">
             </label>
             <ul class="nav-link">
-              <a class="navbtn" href="#Home"><li class="navbtn">Home</li> </a>
-              <a class="navbtn" href="/articles.html"><li class="navbtn">Publications</li> </a>
-              <a class="navbtn" href="#About"><li>About</li></a>
-              <a class="navbtn" href="/certificates.html"><li>Certificates</li></a>
-              <a class="navbtn" href="#Contact"><li>Contact</li></a>
-              <img class="inbox" src="img/Union.png">
+              <li class="navbtn">
+                <a href="#Home">
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
+              <li class="navbtn">
+                <a href="/articles.html">
+                  <i class="fas fa-file-alt"></i>
+                </a>
+              </li>
+              <li class="navbtn">
+                <a href="#About">
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </li>
+              <li class="navbtn">
+                <a href="/certificates.html">
+                  <i class="fas fa-certificate"></i>
+                </a>
+              </li>
+              <li class="navbtn">
+                <a href="#Contact">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+              <li class="navbtn">
+                <img class="inbox" src="img/Union.png" alt="Inbox">
+              </li>
             </ul>
           </nav>
         </header>
@@ -53,7 +96,7 @@
                   allowing me to consistently enhance product quality and performance. Quality consience with an urge to grow and within collaboration I bring a sparkling light to teams.
                  </p>
                  <div class="about-btn">
-                  <button type="button" class="btn">About me</button>
+                  <button type="button" class="btn">Resume</button>
                  </div>
                 <div class="socials">
                    <ul class="iconsSection">
@@ -118,7 +161,7 @@
         </section>
         <section class="col professional">
           <div class="recent-works">
-            <h2>Professional Summary</h2>
+            <h1>Professional Summary</h1>
             <hr class="works-break">
         </div>
           <div class="section-pic">
@@ -179,25 +222,25 @@
       </ul>
        <h2 class="prof-name">Austin Obimbo</h2>
        <h1 class="prof-tag">SOFTWARE ENGINEER, FULL-STACK WEB DEVELOPER</h1>
-       <p class="prof-quote">I believe in creating a better tommorrow by bettering our everyday life</p>
+       <p class="prof-quote">I believe i predict the future by creating it</p>
       </div>
       </section>
       <section class="cosection">
           <div class="counter-section">
               <h2>Projects</h2>
-              <p id="Counter">28</p>
+              <p id="Counter">completed 28+</p>
           </div>
           <div class="counter-section">
               <h2>Clients</h2>
-              <p id="Counter">5</p>
+              <p id="Counter">Served 3+</p>
           </div>
           <div class="counter-section">
               <h2>Years</h2>
-              <p id="Counter">2</p>
+              <p id="Counter">of experience 2</p>
           </div>
           <div class="counter-section">
               <h2>Mentees</h2>
-              <p id="Counter">22</p>
+              <p id="Counter">Mentored 22+</p>
           </div>
       </section>
        <section id="projects" class="works">
@@ -255,7 +298,7 @@
        <section class="about" id="About">
         <div class="about-me">
             <h2 class="about-title">About me</h2>
-            <iframe class="about-video" src="https://www.loom.com/embed/bfcd8b134e944dc4ad7797251b55ecef?sid=00211d1c-31e3-48ea-8553-d522cf4da28a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            
             <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             <button type="button" onclick="location.href = 'https://drive.google.com/file/d/14oawHPuNXChYYcxJ_On0InIbBeMjd5ML/view?usp=share_link'" target = "_blank" class="resume">Get my resume</button>
           </div>

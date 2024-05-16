@@ -6,16 +6,7 @@
 li {
   list-style: none;
 }
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Poppins';
-  font-weight: 600;
-}
+
 
 #content {
   display: none;
@@ -83,20 +74,18 @@ a {
 
 /* Navigation */
 header {
-  background-color: #3c3a39;
   width: 100%;
   height: auto;
   display: flex !important;
   justify-content: space-between;
+  position: fixed;
+  top: 58%;
+  z-index: 999;
 }
 
 .logo-container {
-  height: auto;
-  width: 94px;
-  left: 12px;
-  top: 2px;
-  border-radius: 0;
-  padding: 10px 12px 10px 12px;
+  bottom: 16em;
+  left: 10px;
 }
 
 .menu-dissapear {
@@ -112,6 +101,8 @@ header {
   text-align: center;
   color: #fff;
   animation: rotate 1s ease-in-out forwards;
+  position: absolute;
+  top: -31em;
 }
 
 @keyframes rotate {
@@ -129,7 +120,7 @@ header {
   padding-top: 7.6%;
   padding-left: 16%;
   width: fit-content;
-  display: block;
+  display: none;
 }
 
 .nav-link {
@@ -248,7 +239,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0;
+  padding: 77px 0;
   gap: 80px;
 }
 
@@ -547,17 +538,13 @@ header {
   justify-content: space-around;
   margin-top: 2%;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .counter-section {
-  background-color: #091e42;
-  display: flex;
-  padding: 1%;
-  border-radius: 3%;
-  color: #fff;
-  align-items: center;
-  flex-direction: column-reverse;
-  gap: 14px;
+  font-style: italic;
+  text-align: center;
+  font-palette: normal;
 }
 
 .contact-text {
@@ -648,13 +635,13 @@ fieldset {
 }
 
 .drop-down {
-  position: absolute;
   display: flex;
-  display: none;
+  display: block;
   flex-direction: column;
   background-color: #3c3a39;
   width: 100%;
-  height: 100%;
+  height: 4em;
+  padding: 10px;
 }
 
 #close-nav {
@@ -662,20 +649,29 @@ fieldset {
   display: flex;
 }
 
-.menu-link {
-  color: #fff5e1;
+.menu-list {
   display: flex;
+  justify-content: space-around;
+  height: 2em;
+  align-items: baseline;
+
+}
+
+.menu-link:hover {
+  background-color: #ff6b00;
+  border-radius: 40px;
+  padding: 2px;
+}
+
+.menu-link a  {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  letter-spacing: 0;
-  text-align: left;
-  text-decoration: none;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+}
+
+.menu-link a:hover {
+  display: ruby;
 }
 
 #menu-close {
@@ -826,6 +822,14 @@ fieldset {
   padding-top: 33px;
 }
 
+.recent-works h1 {
+  font-size: 39px;
+  font-family: 'Poppins';
+  color: #000000;
+  font-variant: all-small-caps;
+  font-weight: bolder;
+}
+
 /* .img-fluid {
   width: -webkit-fill-available;
   height: auto;
@@ -834,6 +838,7 @@ fieldset {
 .icons-sctn {
   display: flex;
   gap: 20px;
+  margin: 13px 1px;
 }
 
 .fas {
@@ -841,8 +846,8 @@ fieldset {
 }
 
 .icons-prof {
-  border-radius: 18%;
-  padding: 5px;
+  border-radius: 28%;
+  padding: 16px;
   background-color: #000;
 }
 
@@ -850,7 +855,6 @@ fieldset {
   width: 100%;
   height: 25em;
 }
-
 .imgslider-cards {
   position: absolute;
   width: 100%;
@@ -868,6 +872,12 @@ fieldset {
   font-family: serif;
 }
 
+.prof-quote {
+  font-style: italic;
+  text-align: center;
+  font-palette: normal;
+}
+
 p {
   font-family: 'Poppins', Times;
   font-weight: 100;
@@ -880,14 +890,14 @@ p {
 }
 
 .section-content h2 {
-  font-family: emoji, sans-serif;
-  font-weight: 550;
-  padding: 20px 0 12px 0;
+  font-family: 'Poppins';
+  font-weight: bold;
+  padding: 8px 0 3px 0;
+  font-size: 2em;
+  font-variant: all-small-caps;
 }
 
-h1 {
-  font: caption;
-}
+
 
 .section-content h1 {
   font-weight: 600;
@@ -1017,7 +1027,9 @@ h1 {
   .space-video-container video {
     width: 100%;
   }
-
+  .drop-down {
+    display: none;
+  }
   .technologies-header {
     font-size: 4em;
     line-height: 2;
@@ -1223,6 +1235,7 @@ h1 {
 
   .nav-link {
     display: flex;
+    gap: 10px;
     flex-direction: row;
     color: #fff;
     flex-wrap: nowrap;
@@ -1234,8 +1247,17 @@ h1 {
     color: #fff;
   }
 
+  .navbtn:hover {
+    background-color: #ff6b00;
+    border-radius: 100px;
+  }
+
   nav {
-    margin-right: 47%;
+    margin-right: 25%;
+    width: 48%;
+    background-color: black;
+    height: auto;
+    border-radius: 87px;
   }
 
   .mission-cards {
@@ -1259,7 +1281,7 @@ h1 {
   }
 
   .container {
-    width: 327px;
+    width: 403px;
     gap: 12px;
     display: flex;
     flex-direction: column;
