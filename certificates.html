@@ -12,53 +12,89 @@
 <body>
     <div id="loader"></div>
     <section id="content">
-    <header>
+      <header>
         <div class="logo-container">
           <a href="/"><h3 id="logo">🅰🆄🆂🆃🅸🅽</h3></a>
         </div>
         <div class="drop-down" id="navMenu">
           <ul class="dropdown-menu">
-           <h1 aria-hidden="true" id="menu-close" onclick="closeMenu()">&times;</h1>
-           <a href="#Home"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Portfolio</li> </a>
-           <a href="/articles.html"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Articles</li> </a>
-           <a href="/certificates.html"><li class="menu-link" id="nav-btn" onclick="closeMenu()">Certificates</li></a>
+            <ul class="menu-list">
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="#Home">
+                  <i class="fas fa-home"></i><h6>Home</h6>
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="/articles.html">
+                  <i class="fas fa-file-alt"></i> <h6>Publications</h6>
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="#About">
+                  <i class="fas fa-info-circle"></i><h6>About</h6> 
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="/certificates.html">
+                  <i class="fas fa-certificate"></i> <h6>Certificates</h6>
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="#Contact">
+                  <i class="fas fa-envelope"></i> <h6>Contact</h6>
+                </a>
+              </li>
+            </ul>
           </ul>
         </div>
-        <nav>
-          <label class="hamberger-btn" >
-          <img class="hamberger" id="ham" onclick="openMenu()" src="img/IconMenu.png">
-          </label>
-          <ul class="nav-link">
-            <a class="navbtn" href="#Home"><li class="navbtn">Portfolio</li> </a>
-            <a class="navbtn" href="/articles.html"><li class="navbtn">Articles</li> </a>
-            <a class="navbtn" href="/certificates.html"><li>Certificates</li></a>
-          </ul>
-        </nav>
       </header>
       <section id="certificates">
         
       </section>
       
-        <div class="footer">
-            <ul class="footerIcons">
-                <li class="icons">
-                    <a href=""><img class="icon-bg" src="img/Vector.png" alt="GitHub" /></a>
-                </li>
-                <li class="icons">
-                    <a href=""><img class="icon-bg" src="img/Group.png" alt="GitHub" /></a>
-                </li>
-                <li class="icons">
-                    <a href=""><img class="icon-bg" src="img/Vector-4.png" alt="GitHub" /></a>
-                </li>
-                <li class="icons">
-                    <a href=""><img class="icon-bg" src="img/Vector-5.png" alt="GitHub" /></a>
-                </li>
-                <li class="icons">
-                    <a href=""><img class="icon-bg" src="img/Vector-6.png" alt="GitHub" /></a>
-                </li>
-            </ul>
-            <hr class="footer-breaker">
-        </section>
+      <div class="footer">
+        <ul class="footerIcons">
+            <li>
+                <a  class="fa-brands fa-github" href="https://www.github.com/Obimbo07"></a>
+            </li>
+            <li >
+                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/austin-obimbo/"></a>
+            </li>
+            <li >
+                <a class="fa-brands fa-medium" href="https://medium.com/@obimboausts"></a>
+            </li>
+            <li>
+                <a  class="fa-brands fa-dev" href="https://dev.to/0bimbo"></a>
+            </li>
+        </ul>
+        <div class="coffee">
+          <a class="fas fa-coffee"></a>
+          <h2>Buy Coffee</h2>
+        </div>
+        <div class="rsm-btn">
+          <button type="button" onclick="location.href = 'https://docs.google.com/document/d/1fTpnB8prhz1VXJe4VMbI5VFD1JmdrqohntdfoZMzqXw/edit?usp=sharing'" target = "_blank" class="resume">Get my resume</button> 
+        </div>
+      </div>
+      <div class="bookings">
+        <a class="book" href="mailto:obimboausts@gmail.com">
+          <h6>Email</h6>
+          <p>obimboausts@gmail.com</p>
+        </a>
+        <a class="book">
+          <h6>Calendy</h6>
+          <p>Schedule a Meeting</p>
+        </a>
+        <a class="book" href="tel:+254794570888">
+          <h6>Phone</h6>
+          <p>+254794570888</p>
+        </a>
+      </div>
+        <hr class="footer-breaker">
+      </section>
+      <div class="bottom-nav">
+        
+      </div>
+    </section>
     <script src="certificates.js"></script>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/2094a85d2e.js" crossorigin="anonymous"></script>

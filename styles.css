@@ -1,6 +1,16 @@
+/* stylelint-disable block-no-empty */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable declaration-block-no-duplicate-properties */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable csstree/validator */
+
 * {
   padding: 0;
   margin: 0;
+}
+
+.calendly-badge-widget {
+  bottom: 198px !important;
 }
 
 li {
@@ -13,7 +23,7 @@ li {
 
 .bottom-nav {
   width: inherit;
-  height: 6em;
+  height: 5em;
 }
 
 #loader {
@@ -52,8 +62,8 @@ a {
 }
 
 .brands img {
-  width: 15%;
-  height: 4em;
+  width: 17%;
+  height: 3em;
   padding: 8px;
 }
 
@@ -77,7 +87,6 @@ a {
 }
 
 /* Navigation */
-
 
 .logo-container {
   bottom: 16em;
@@ -146,7 +155,7 @@ a {
 }
 
 #myName {
-  font-family: 'Crete Round', Times;
+  font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -154,6 +163,15 @@ a {
   text-align: left;
   color: #ff6b00;
   width: 100%;
+}
+
+.services-header {
+  top: 19%;
+  left: 15%;
+  position: relative;
+  z-index: 9999;
+  font-weight: bolder !important;
+  font-size: 66px !important;
 }
 
 .mission-cards {
@@ -197,7 +215,7 @@ a {
 }
 
 #title {
-  font-family: 'Crete Round', Times;
+  font-family: 'Crete Round', Times, sans-serif;
   font-weight: 400;
   font-size: 21px;
   color: #e6a23c;
@@ -229,6 +247,19 @@ a {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
+}
+
+.coffee a {
+  font-size: 2em;
+}
+
+.iconsSection li a {
+  color: #fff;
+  font-size: 2em;
+}
+
+.iconsSection li a:hover {
+  color: #ff6b00;
 }
 
 .works {
@@ -358,17 +389,33 @@ a {
   left: 16px;
 }
 
+.coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-skillset {
   color: #fff;
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
 }
 
+button {
+  border-radius: 100px;
+}
+
+button:hover {
+  background-color: #3e1a00;
+}
+
 .card-btn {
   border: 0;
   height: 48px;
   background: #ff6b00;
+  cursor: pointer;
   color: #fff;
+  box-shadow: #4a4a4a 0 9px 12px 0;
 }
 
 .missionCard-container {
@@ -421,6 +468,16 @@ a {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.rsm-btn button:hover {
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #733101;
+}
+
+.rsm-btn {
+  margin-right: 220px;
 }
 
 .about-breaker {
@@ -540,8 +597,7 @@ a {
 .counter-section {
   font-style: italic;
   text-align: center;
-  font-palette: normal;
-  box-shadow: #154000 0 -19px 25px 0 inset;
+  box-shadow: #4a4a4a 0 9px 12px 0;
   padding: 10px;
   border-radius: 12px;
 }
@@ -612,7 +668,20 @@ fieldset {
 }
 
 .footer {
-  margin: 10% 22%;
+  margin: 4% 3%;
+  display: ruby-text;
+}
+
+.footerIcons li {
+  font-size: 2em;
+}
+
+.footerIcons li a {
+  color: #000;
+}
+
+.footerIcons li a:hover {
+  color: #ff6b00;
 }
 
 .footerIcons {
@@ -669,7 +738,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .menu-link a:hover {
@@ -734,6 +803,10 @@ fieldset {
   left: 50%;
   width: 77%;
   transform: translate(-50%, -50%);
+  height: 38em;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-img {
@@ -742,7 +815,7 @@ fieldset {
 
 #modalImage {
   display: block;
-  height: 26em;
+  height: 15em;
 }
 
 #closeModalBtn {
@@ -1007,17 +1080,17 @@ p {
 
 .bookings {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   background-color: #3c3a39;
 }
 
 .book {
-  color: #7bff00;
-  background-color: #091e42;
+  color: #ff6b00;
+  background-color: #020a01;
   text-align: center;
-  padding: 2px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 31px;
 }
 
 .book:hover {
@@ -1025,10 +1098,25 @@ p {
   color: #000;
 }
 
+.blog-link {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-link a {
+  height: 2em !important;
+  padding: 10px;
+}
+
 @media (min-width: 768px) {
+  .menu-link a {
+    font-size: 30px;
+  }
+
   .view-more-projects {
     display: block !important;
   }
+
   .space-video-container video {
     width: 100%;
   }
@@ -1036,11 +1124,15 @@ p {
   .drop-down {
     display: block;
     z-index: 9999;
+    width: 50%;
+    left: 26em;
+    border-radius: 61px;
   }
-  
+
   .cosection {
     justify-content: center;
   }
+
   .technologies-header {
     font-size: 4em;
     line-height: 2;
@@ -1073,7 +1165,32 @@ p {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    right: -28%;
+    right: -29%;
+    bottom: 84px;
+  }
+
+  #services-pointer {
+    color: #f55900;
+    position: absolute;
+    z-index: 9999;
+    font-size: 4em;
+    top: 29%;
+    right: 48%;
+    animation: heartbeat 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scaleX(1);
+    }
+
+    50% {
+      transform: scaleX(0.8);
+    }
+
+    100% {
+      transform: scaleX(1);
+    }
   }
 
   .blog-part {
@@ -1103,6 +1220,16 @@ p {
     padding: 9px;
     border-radius: 100%;
     background-color: #000;
+  }
+
+  .prof-icons a {
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .prof-icons a:hover {
+    color: #ff6b00;
+    font-size: 2em;
   }
 
   .brands img {
@@ -1375,6 +1502,7 @@ p {
 
   .card-btn {
     display: none;
+    cursor: pointer;
     transition: background-color 0.5s ease;
   }
 
