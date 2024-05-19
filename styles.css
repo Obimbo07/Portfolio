@@ -1177,10 +1177,10 @@ p {
     top: 29%;
     right: 48%;
     animation: heartbeat 1s ease-in-out infinite alternate;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
+
 
   @keyframes heartbeat {
     0% {
@@ -1190,12 +1190,15 @@ p {
     25% {
       transform: scaleX(0.8);
     }
+
     50% {
-      transform: scaleX(1)
+      transform: scaleX(1);
     }
+
     75% {
-      transform: scale(1.8)
+      transform: scale(1.8);
     }
+
     100% {
       transform: scaleX(2);
     }
