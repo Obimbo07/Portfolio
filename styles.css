@@ -11,6 +11,7 @@
 
 .calendly-badge-widget {
   bottom: 198px !important;
+  margin-right: 94px;
 }
 
 li {
@@ -166,12 +167,12 @@ a {
 }
 
 .services-header {
-  top: 17%;
-  left: 16%;
+  top: 23%;
+  left: 12%;
   position: relative;
   z-index: 9999;
   font-weight: bolder !important;
-  font-size: 7em !important;
+  font-size: 5em !important;
 }
 
 .mission-cards {
@@ -207,7 +208,7 @@ a {
   position: relative;
   padding: 10px;
   margin: 10px;
-  width: 36%;
+  top: 34%;
 }
 
 .card:hover {
@@ -418,9 +419,21 @@ button:hover {
   box-shadow: #4a4a4a 0 9px 12px 0;
 }
 
+/*  Cards container css  */
+
+
 .missionCard-container {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  background: linear-gradient(to bottom right, #cc4c0200, #ff840a);
+  top: -13rem;
+}
+
+.cards-sctn {
+  height: fit-content;
+  top: 12em;
+  position: relative; 
 }
 
 .about {
@@ -707,7 +720,7 @@ fieldset {
   display: block;
   flex-direction: column;
   background-color: #3c3a39;
-  width: 100%;
+  width: 22em;
   height: 4em;
   padding: 10px;
   position: fixed;
@@ -1629,8 +1642,6 @@ p {
   }
 
   .footer {
-    margin: 1% 20% 1%  10%;
-    margin: 1% 20% 1% 10%;
     display: flex;
     align-content: center;
     justify-content: space-between;
