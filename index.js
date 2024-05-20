@@ -89,7 +89,7 @@ const projects = [
     index: 4,
     name: 'Space X Travellers Hub',
     description: 'I collaborated remotely with team members in this frontend application to utilise API calls to render a list of Space X dragons and spacce shuttles. Using redux to handle state i was able to save bookings of the dragons.',
-    technoloBootstraps: ['React', 'Bootstrap', 'Redux'],
+    technologies: ['React', 'Bootstrap', 'Redux'],
     image: 'img/spacex.png',
     liveLink: 'https://example.com/project1',
     sourceLink: 'https://github.com/user/project1',
@@ -202,6 +202,39 @@ function createProjectCard(project, index) {
     openModal(projects[projectIndex]);
   });
 }
+
+function createprojectsCard(project, index) {
+  const desc = project.description.substring(0, 100);
+  const card = document.createElement('div');
+  card.classList.add('project-card');
+
+  const cardContent = `
+  <div class="card-works" style="background-color: black; background-position: top; background-size: contain; background-repeat: no-repeat;">
+  <div class="prjct-banner">
+    <h2 class="card-title">${project.name}</h2>
+    <img class="prjct-img" src="${project.image}" >
+  </div>
+
+  <p class="card-description">${desc}...</p>
+  <ul class="card-techskills">
+    <li class="card-skillset">HTML</li>
+    <li class="card-skillset">Bootstrap</li>
+    <li class="card-skillset">Ruby</li>
+  </ul>
+  <button class="card-btn" data-index="${index}">See Project</button>
+ </div> 
+     
+    `;
+  card.innerHTML = cardContent;
+  projectsSection.appendChild(card);
+
+  const cardbtn = card.querySelector('.card-btn');
+  cardbtn.addEventListener('click', function open() {
+    const projectIndex = parseInt(this.getAttribute('data-index'), 10);
+    openModal(projects[projectIndex]);
+  });
+}
+
 const recentProject = document.querySelector('.project-view');
 recentProject.addEventListener('click', () => {
   openModal(projects[0]);
@@ -217,6 +250,10 @@ closeModalBtn.addEventListener('click', () => {
 
 projects.slice(1, 6).forEach((project, index) => {
   createProjectCard(project, index + 1);
+});
+
+projects.forEach((project, index) => {
+  createprojectsCard(project, index);
 });
 
 /* ---- validation form ----- */
