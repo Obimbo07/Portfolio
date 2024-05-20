@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+    <div id="loader"></div>
+    <section id="content">
+      <header>
+        <div class="logo-container">
+          <a href="/"><h3 id="logo">🅰🆄🆂🆃🅸🅽</h3></a>
+        </div>
+        <div class="drop-down" id="navMenu">
+          <ul class="dropdown-menu">
+            <ul class="menu-list">
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="/">
+                  <i class="fas fa-home"></i><h6>Home</h6>
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="/articles.html">
+                  <i class="fas fa-file-alt"></i> <h6>Publications</h6>
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="/#About">
+                  <i class="fas fa-info-circle"></i><h6>About</h6> 
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="/certificates.html">
+                  <i class="fas fa-certificate"></i> <h6>Certificates</h6>
+                </a>
+              </li>
+              <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <a href="#Contact">
+                  <i class="fas fa-envelope"></i> <h6>Contact</h6>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </header>
+      <section>
+        
+      </section>
+      <section id="projects" class="works">
+        <div class="recent-works">
+            <h2 id="works-title">My Recent Works</h2>
+            <hr class="works-break">
+        </div>
+
+        
+        <div id="grid-container">
+            <div class="recent-project">
+              <img class="project-img" src="img/Trip.jfif" alt="Olay company desktop view"/>
+              <div class="right-block">
+                <h2 class="title-post">Book Destinaton</h2>
+                <p class="posts-description">This Full stack application helps users book holiday, meeting and home destinations, in various places. Users have can perform CRUD operations on the destinations.</p>
+               <ul class="tech-skills">
+                <li class="skillset">React</li>
+                <li class="skillset">API</li>
+                <li class="skillset">Ruby</li>
+               </ul>
+               <button type="button" class="project-view" class="card-btn" id="openModalBtn">See project</button>
+             </div>
+            </div>
+         </div>
+            
+       </section>
+       <div class="searchbar">
+        <h1 class="text-white">Search by technologies used</h1>
+        <div id="techNav" class="tech-nav"></div>
+         </div>
+       <section id="projectsSection" class="cards-box">
+        
+
+           
+      </section>
+       <div id="modalOverlay">
+        <div id="modalContent">
+          <h2 id="modalTitle"></h2>
+          <ul id="modalTechnologies"></ul>
+          <img id="modalImage" src="Img/projects.png" alt="PopUp">
+          <p id="modalDescription"></p>
+          <div id=linkflex> 
+          <a id="modalLiveLink" href="" target="_blank">Live Version<img src="img/Icon.png" alt="GitHub" /></a>
+          <a id="modalSourceLink" href="" target="_blank">Source Code<img src="img/github.svg" alt="GitHub" /></a>
+          </div>
+          <span id="closeModalBtn">&times;</span>
+        </div>
+      </div>
+      <div class="footer">
+        <ul class="footerIcons">
+            <li>
+                <a  class="fa-brands fa-github" href="https://www.github.com/Obimbo07"></a>
+            </li>
+            <li >
+                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/austin-obimbo/"></a>
+            </li>
+            <li >
+                <a class="fa-brands fa-medium" href="https://medium.com/@obimboausts"></a>
+            </li>
+            <li>
+                <a  class="fa-brands fa-dev" href="https://dev.to/0bimbo"></a>
+            </li>
+        </ul>
+        <div class="coffee">
+          <a class="fas fa-coffee"></a>
+          <h2>Buy Coffee</h2>
+        </div>
+        <div class="rsm-btn">
+          <button type="button" onclick="location.href = 'https://docs.google.com/document/d/1fTpnB8prhz1VXJe4VMbI5VFD1JmdrqohntdfoZMzqXw/edit?usp=sharing'" target = "_blank" class="resume">Get my resume</button> 
+        </div>
+      </div>
+      <div class="bookings">
+        <a class="book" href="mailto:obimboausts@gmail.com">
+          <h6>Email</h6>
+          <p>obimboausts@gmail.com</p>
+        </a>
+        <a class="book">
+          <h6>Calendy</h6>
+          <p>Schedule a Meeting</p>
+        </a>
+        <a class="book" href="tel:+254794570888">
+          <h6>Phone</h6>
+          <p>+254794570888</p>
+        </a>
+      </div>
+        <hr class="footer-breaker">
+      </section>
+      <div class="bottom-nav">
+        
+      </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="projects.js"></script>
+    <script src="https://kit.fontawesome.com/2094a85d2e.js" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
