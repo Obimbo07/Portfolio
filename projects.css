@@ -3,7 +3,7 @@
 }
 
 .title-post {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .posts-description {
@@ -11,17 +11,17 @@
 }
 
 .tech-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .search-link {
-    display: flex;
-    gap: 10px;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    padding: 2px;
-    background-color: #ffff;
-    z-index: 9999;
-} 
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  padding: 2px;
+  background-color: #ffff;
+  z-index: 9999;
+}
