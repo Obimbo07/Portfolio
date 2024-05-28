@@ -9,9 +9,24 @@
   margin: 0;
 }
 
+/*
+header {
+  display: flex;
+  display: block;
+  flex-direction: column;
+  background-color: #3c3a39;
+  height: 4em;
+  width: 86%;;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+} */
+
 .calendly-badge-widget {
-  bottom: 198px !important;
-  margin-right: 94px;
+  bottom: 78px !important;
+  right: -9px !important;
+  width: 34%;
 }
 
 li {
@@ -172,7 +187,7 @@ a {
   position: relative;
   z-index: 9999;
   font-weight: bolder !important;
-  font-size: 5em !important;
+  font-size: 4em !important;
 }
 
 .mission-cards {
@@ -552,18 +567,17 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 10px;
-  padding: 18px;
 }
 
 .technologies-header {
-  font-size: 2em;
+  font-size: 39px;
+  text-align: center;
 }
 
 .tech-icon {
-  width: 14%;
-  height: 5em;
-  background-color: #fdfdfdb8;
+  width: 17%;
+  height: 4em;
+  background-color: #5d5656bd;
   border-radius: 18px;
 }
 
@@ -711,7 +725,8 @@ fieldset {
   left: 120px;
   top: 21px;
   border-radius: 10px;
-  margin: auto 27%;
+  margin: auto 36%;
+  border-radius: 13px;
 }
 
 .drop-down {
@@ -719,12 +734,17 @@ fieldset {
   display: block;
   flex-direction: column;
   background-color: #3c3a39;
-  width: 22em;
   height: 4em;
+  width: -webkit-fill-available;
   padding: 10px;
   position: fixed;
   bottom: 0;
   z-index: 9999;
+  color: #fff;
+}
+
+.dropdown-menu {
+  display: contents !important;
 }
 
 #close-nav {
@@ -737,6 +757,7 @@ fieldset {
   justify-content: space-around;
   height: 2em;
   align-items: baseline;
+  gap: 40px;
 }
 
 .menu-link:hover {
@@ -750,7 +771,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .menu-link a:hover {
@@ -764,15 +785,6 @@ fieldset {
   height: 14px;
 }
 
-.dropdown-menu {
-  padding: 13px;
-  display: contents !important;
-}
-
-.dropdown-menuShow {
-  display: block;
-  z-index: 3;
-}
 
 /* Styles for the popup */
 .project-card {
@@ -993,21 +1005,6 @@ p {
   background-color: #ff6b00;
 }
 
-.about-btn button {
-  background-color: #ff6b00;
-  padding: 10px;
-  position: absolute;
-  right: 20px;
-  border-radius: 250%;
-  animation: btn-slide 4s ease-in-out;
-}
-
-.about-btn button:hover {
-  padding: 20px;
-  border-radius: 200%;
-  cursor: pointer;
-}
-
 .article-card {
   max-height: 40em;
   display: inline-block;
@@ -1058,8 +1055,8 @@ p {
 }
 
 .prjct-img {
-  width: 160px;
-  height: 8em;
+  width: 120px;
+  height: 5rem;
 }
 
 .space-video-container {
@@ -1073,7 +1070,7 @@ p {
 
 .programming-icon {
   position: absolute;
-  transform: translate(2px, -120%);
+  transform: translate(2px, -118%);
   color: #fff;
   padding: 10px;
 }
@@ -1092,7 +1089,8 @@ p {
 
 .bookings {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   background-color: #3c3a39;
 }
@@ -1120,7 +1118,16 @@ p {
   padding: 10px;
 }
 
+.company-brands {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
+  .bookings {
+    display: flex;
+    flex-direction: row;
+  }
+
   .menu-link a {
     font-size: 30px;
   }
@@ -1137,7 +1144,7 @@ p {
     display: block;
     z-index: 9999;
     width: 50%;
-    left: 26em;
+    left: 20em;
     border-radius: 61px;
   }
 
@@ -1147,7 +1154,12 @@ p {
 
   .technologies-header {
     font-size: 4em;
-    line-height: 2;
+    line-height: 1;
+  }
+
+  .tech-icon {
+    width: 13%;
+    height: 5em;
   }
 
   .programming-icon {
@@ -1178,7 +1190,7 @@ p {
     position: relative;
     bottom: 263px;
     background: linear-gradient(to bottom right, #cc4c0200, #ff840a);
-    height: 100vh;
+    height: 47em;
   }
 
   #services-pointer {
@@ -1272,8 +1284,8 @@ p {
     position: absolute;
     top: 0;
     left: -53px;
-    width: 100%;
-    height: 42%;
+    width: 93%;
+    height: 32%;
     border-radius: 81%;
     border: 49px solid transparent;
     animation: borderRotate 10s linear infinite alternate;
@@ -1368,6 +1380,7 @@ p {
     position: relative;
     left: 55%;
     gap: 6px;
+    top: 6em;
   }
 
   .card {

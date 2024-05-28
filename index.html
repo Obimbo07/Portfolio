@@ -18,35 +18,37 @@
             <a href="/"><h3 id="logo">🅰🆄🆂🆃🅸🅽</h3></a>
           </div>
           <div class="drop-down" id="navMenu">
-            <ul class="dropdown-menu">
               <ul class="menu-list">
-                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <li class="menu-link" id="nav-btn" >
                   <a href="#Home">
                     <i class="fas fa-home"></i><h6>Home</h6>
                   </a>
                 </li>
-                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <li class="menu-link" id="nav-btn" >
+                  <a href="/projects.html">
+                    <i class="fas fa-file-alt"></i> <h6>Projects</h6>
+                  </a>
+                </li>
+                <li class="menu-link" id="nav-btn" >
                   <a href="/articles.html">
                     <i class="fas fa-file-alt"></i> <h6>Publications</h6>
                   </a>
                 </li>
-                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
-                  <a href="#About">
-                    <i class="fas fa-info-circle"></i><h6>About</h6> 
+                <li class="menu-link" id="nav-btn">
+                    <i class="fas fa-info-circle"></i> <h6>About</h6> 
                   </a>
                 </li>
-                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <li class="menu-link" id="nav-btn" >
                   <a href="/certificates.html">
                     <i class="fas fa-certificate"></i> <h6>Certificates</h6>
                   </a>
                 </li>
-                <li class="menu-link" id="nav-btn" onclick="closeMenu()">
+                <li class="menu-link" id="nav-btn">
                   <a href="#Contact">
                     <i class="fas fa-envelope"></i> <h6>Contact</h6>
                   </a>
                 </li>
               </ul>
-            </ul>
           </div>
         </header>
         <section class="banner-section" id="Home">
@@ -61,9 +63,6 @@
                  <p id="description">My perpetual architecture empowers me to make data-driven decisions, 
                   allowing me to consistently enhance product quality and performance. Quality consience with an urge to grow and within collaboration I bring a sparkling light to teams.
                  </p>
-                 <div class="about-btn">
-                  <button type="button" class="btn">Resume</button>
-                 </div>
                 <div class="socials">
                    <ul class="iconsSection">
                         <li class="icons">
@@ -232,17 +231,17 @@
                 <li class="skillset">API</li>
                 <li class="skillset">Ruby</li>
                </ul>
-               <button type="button" class="project-view" class="card-btn" id="openModalBtn">See project</button>
+               <button type="button" class="project-view" class="card-btn" data-index="0" id="openModalBtn">See project</button>
              </div>
             </div>
          </div>
             
        </section>
-       <section id="projectsSection" class="cards-box">
+       <section id="projectsHomeSection" class="cards-box">
 
            
       </section>
-      <button type="button" class="card-btn view-more-projects">View more</button>
+      <button type="button" href="./projects.html" class="card-btn view-more-projects">View more</button>
        <div id="modalOverlay">
         <div id="modalContent">
           <h2 id="modalTitle"></h2>
@@ -302,6 +301,7 @@
               <img src="/img/ruby.png" class="tech-icon">
               <img src="/img/zoom.png" class="tech-icon">
               <img src="/img/git.png" class="tech-icon">
+              <img src="/img/aws-logo.png" class="tech-icon">
             </div>
             </div>
           </div>
@@ -392,6 +392,9 @@
             </a>
           </div>
             <hr class="footer-breaker">
+            <div class="bottom-nav">
+        
+            </div>
           </section>
           <script type="text/javascript">
             window.onload = function() {
@@ -405,14 +408,14 @@
               });
             }
           </script>
+     <script src="index.js"></script>
+     <script async src="projects.js"></script>
+     <script async src="articles.js"></script>
      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
      <script src="https://kit.fontawesome.com/2094a85d2e.js" crossorigin="anonymous"></script>
      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-     <script src="index.js"></script>
-     <script src="projects.js"></script>
-     <script async src="articles.js"></script>
     </body>
 </html>

@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 const projects = [
   {
     index: 0,
@@ -11,7 +12,7 @@ const projects = [
   {
     index: 1,
     name: 'Budget App',
-    description: 'A more generic versioned Budget App, that includes transaction managment features.A User authentication system using JWT authentication.',
+    description: 'A more generic versioned Budget App, that includes transaction management features. A User authentication system using JWT authentication.',
     image: 'img/budget-app.jpg',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     liveLink: 'https://example.com/project2',
@@ -20,7 +21,7 @@ const projects = [
   {
     index: 2,
     name: 'Recipe Daily',
-    description: 'is a User authenticated application that allows them perform CRUD operations on recipe meals. The add food feature enables users create unique recipes and decide which ones to display publicly to all users. ',
+    description: 'is a User authenticated application that allows them perform CRUD operations on recipe meals. The add food feature enables users to create unique recipes and decide which ones to display publicly to all users.',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     image: 'img/recipe.jpg',
     liveLink: 'https://example.com/project1',
@@ -29,7 +30,7 @@ const projects = [
   {
     index: 3,
     name: 'Catalogue of My Things',
-    description: 'Collaborated on this console app  that helps users manage their category of things. The menu is user friendly and interactive with a list of options. record of different types of things you own: books, music albums, movies, and games.The data will be stored in JSON files but will also prepare a database with tables structure analogical to the programs class structure.',
+    description: 'Collaborated on this console app that helps users manage their category of things. The menu is user-friendly and interactive with a list of options. A record of different types of things you own: books, music albums, movies, and games. The data will be stored in JSON files but will also prepare a database with tables structure analogical to the program\'s class structure.',
     technologies: ['Ruby', 'Console Interface'],
     image: 'img/cot.jpg',
     liveLink: 'https://example.com/project1',
@@ -38,7 +39,7 @@ const projects = [
   {
     index: 4,
     name: 'Space X Travellers Hub',
-    description: 'I collaborated remotely with team members in this frontend application to utilise API calls to render a list of Space X dragons and spacce shuttles. Using redux to handle state i was able to save bookings of the dragons.',
+    description: 'I collaborated remotely with team members in this frontend application to utilize API calls to render a list of Space X dragons and space shuttles. Using redux to handle state, I was able to save bookings of the dragons.',
     technologies: ['React', 'Bootstrap', 'Redux'],
     image: 'img/spacex.png',
     liveLink: 'https://example.com/project1',
@@ -47,7 +48,7 @@ const projects = [
   {
     index: 5,
     name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
@@ -56,7 +57,7 @@ const projects = [
   {
     index: 6,
     name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
@@ -65,7 +66,7 @@ const projects = [
   {
     index: 7,
     name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
@@ -74,7 +75,7 @@ const projects = [
   {
     index: 8,
     name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     image: 'img/projects.png',
     liveLink: 'https://example.com/project1',
@@ -82,7 +83,6 @@ const projects = [
   },
   // Add more project objects as needed
 ];
-
 // Group projects by technology
 function groupProjectsByTechnology(projects) {
   const techGroups = {};
@@ -102,26 +102,28 @@ const projectsByTechnology = groupProjectsByTechnology(projects);
 // Create navigation links
 const navContainer = document.getElementById('techNav');
 const projectsSection = document.getElementById('projectsSection');
+const projectsHomeSection = document.getElementById('projectsHomeSection');
 
 function createNavLinks(techGroups) {
-for (const tech in techGroups) {
-const navLink = document.createElement('button');
-navLink.textContent = tech;
-navLink.classList.add('search-link');
-navLink.addEventListener('click', () => displayProjectsByTechnology(techGroups[tech]));
-navContainer.appendChild(navLink);
-  }
+  const techKeys = Object.keys(techGroups);
+  techKeys.forEach((tech) => {
+    const navLink = document.createElement('button');
+    navLink.textContent = tech;
+    navLink.classList.add('search-link');
+    navLink.addEventListener('click', () => displayProjectsByTechnology(techGroups[tech]));
+    if (navContainer) navContainer.appendChild(navLink);
+  });
 }
 
 function displayProjectsByTechnology(projects) {
   projectsSection.innerHTML = ''; // Clear current projects
-  projects.forEach((project, index) => createProjectCard(project, index));
+  projects.forEach((project, index) => createProjectCard(project, index, projectsSection));
 }
 
 createNavLinks(projectsByTechnology);
 
 // Create project cards
-function createProjectCard(project, index) {
+function createProjectCard(project, index, container) {
   const desc = project.description.substring(0, 100);
   const card = document.createElement('div');
   card.classList.add('project-card');
@@ -141,14 +143,27 @@ function createProjectCard(project, index) {
      </div> 
     `;
   card.innerHTML = cardContent;
-  projectsSection.appendChild(card);
+  container.appendChild(card);
 
   const cardBtn = card.querySelector('.card-btn');
   cardBtn.addEventListener('click', () => openModal(project));
 }
 
-// Display all projects initially
-projects.forEach((project, index) => createProjectCard(project, index));
+// Display all projects initially if on projects.html
+if (projectsSection) {
+  projects.forEach((project, index) => createProjectCard(project, index, projectsSection));
+}
+
+const recentProjectButton = document.querySelector('#openModalBtn[data-index="0"]');
+if (recentProjectButton) {
+  recentProjectButton.addEventListener('click', () => openModal(projects[0]));
+}
+
+// Render the first six projects in the home section if on index.html
+if (projectsHomeSection) {
+  const homeProjects = projects.slice(0, 6);
+  homeProjects.forEach((project, index) => createProjectCard(project, index, projectsHomeSection));
+}
 
 // Modal logic
 const modalOverlay = document.getElementById('modalOverlay');
