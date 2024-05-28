@@ -25,8 +25,8 @@ header {
 
 .calendly-badge-widget {
   bottom: 78px !important;
-  right: -9px !important;
-  width: 34%;
+  right: 41px !important;
+  width: 41%;
 }
 
 li {
@@ -792,7 +792,7 @@ fieldset {
   transition: transform 0.5s ease;
   cursor: pointer;
 }
-
+/* Modal Content */
 #modalOverlay {
   display: none;
   position: fixed;
@@ -814,22 +814,30 @@ fieldset {
   font-size: 32px;
   line-height: 44px;
 }
+#modalTechnologies {
+  display: flex;
+  gap: 10px;
+}
+
+#modalTechnologies li {
+  border: 1px solid #f55900;
+  padding: 5px;
+}
+
 
 #modalContent {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   background-color: #fff;
-  padding: 20px;
+  padding: 8px;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 77%;
   transform: translate(-50%, -50%);
-  height: 38em;
-  overflow: auto;
+  height: 53em;
+  overflow: scroll;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .project-img {
@@ -845,7 +853,7 @@ fieldset {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: 32px;
   cursor: pointer;
 }
 
@@ -882,12 +890,17 @@ fieldset {
 #linkflex a {
   background: #ff6b00;
   width: 125px;
-  height: 24px;
+  height: 40px;
   padding: 10px;
   color: #fff;
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+#linkflex a img {
+  width: 17px;
+  height: 17px;
 }
 
 .errMsgAdd {
