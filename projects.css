@@ -1,0 +1,36 @@
+#content {
+  background-color: #0065be !important;
+}
+
+.title-post {
+  color: #fff !important;
+}
+
+.posts-description {
+  color: #fff !important;
+}
+
+.tech-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+.search-link {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  padding: 10px;
+  background-color: #ffff;
+  z-index: 9999;
+  margin: 1px;
+}
+
+.searchbar h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-variant: all-small-caps;
+  text-decoration: underline;
+}
