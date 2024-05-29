@@ -7,7 +7,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing:unset !important;
+  -webkit-box-sizing: unset !important;
 }
 
 /*
@@ -787,6 +787,7 @@ fieldset {
   transition: transform 0.5s ease;
   cursor: pointer;
 }
+
 /* Modal Content */
 #modalOverlay {
   display: none;
@@ -809,6 +810,7 @@ fieldset {
   font-size: 32px;
   line-height: 44px;
 }
+
 #modalTechnologies {
   display: flex;
   gap: 10px;
@@ -818,7 +820,6 @@ fieldset {
   border: 1px solid #f55900;
   padding: 5px;
 }
-
 
 #modalContent {
   display: flex;
@@ -1149,6 +1150,7 @@ p {
 
   .view-more-projects {
     display: block !important;
+    width: fit-content;
   }
 
   .space-video-container video {
@@ -1603,9 +1605,8 @@ p {
     margin: 5% 57% 0% 6%;
     width: 87%;
   }
-  .view-more-projects {
-    width: fit-content;
-  }
+
+
 
   .tools-list {
     display: flex;
