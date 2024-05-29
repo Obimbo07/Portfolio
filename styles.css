@@ -1,24 +1,46 @@
+/* stylelint-disable block-no-empty */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable declaration-block-no-duplicate-properties */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable csstree/validator */
+
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: unset !important;
+}
+
+/*
+header {
+  display: flex;
+  display: block;
+  flex-direction: column;
+  background-color: #3c3a39;
+  height: 4em;
+  width: 86%;;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+} */
+
+.calendly-badge-widget {
+  bottom: 78px !important;
+  right: 4px !important;
+  width: 34%;
 }
 
 li {
   list-style: none;
 }
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Poppins';
-  font-weight: 600;
-}
 
 #content {
   display: none;
+}
+
+.bottom-nav {
+  width: inherit;
+  height: 5em;
 }
 
 #loader {
@@ -57,8 +79,8 @@ a {
 }
 
 .brands img {
-  width: 15%;
-  height: 4em;
+  width: 17%;
+  height: 3em;
   padding: 8px;
 }
 
@@ -82,21 +104,10 @@ a {
 }
 
 /* Navigation */
-header {
-  background-color: #3c3a39;
-  width: 100%;
-  height: auto;
-  display: flex !important;
-  justify-content: space-between;
-}
 
 .logo-container {
-  height: auto;
-  width: 94px;
-  left: 12px;
-  top: 2px;
-  border-radius: 0;
-  padding: 10px 12px 10px 12px;
+  bottom: 16em;
+  left: 10px;
 }
 
 .menu-dissapear {
@@ -112,6 +123,8 @@ header {
   text-align: center;
   color: #fff;
   animation: rotate 1s ease-in-out forwards;
+  position: absolute;
+  top: -31em;
 }
 
 @keyframes rotate {
@@ -129,7 +142,7 @@ header {
   padding-top: 7.6%;
   padding-left: 16%;
   width: fit-content;
-  display: block;
+  display: none;
 }
 
 .nav-link {
@@ -159,7 +172,7 @@ header {
 }
 
 #myName {
-  font-family: 'Crete Round', Times;
+  font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -167,6 +180,15 @@ header {
   text-align: left;
   color: #ff6b00;
   width: 100%;
+}
+
+.services-header {
+  top: 23%;
+  left: 12%;
+  position: relative;
+  z-index: 9999;
+  font-weight: bolder !important;
+  font-size: 4em !important;
 }
 
 .mission-cards {
@@ -202,7 +224,7 @@ header {
   position: relative;
   padding: 10px;
   margin: 10px;
-  width: 36%;
+  top: 34%;
 }
 
 .card:hover {
@@ -210,7 +232,7 @@ header {
 }
 
 #title {
-  font-family: 'Crete Round', Times;
+  font-family: 'Crete Round', Times, sans-serif;
   font-weight: 400;
   font-size: 21px;
   color: #e6a23c;
@@ -244,11 +266,24 @@ header {
   gap: 1.5em;
 }
 
+.coffee a {
+  font-size: 2em;
+}
+
+.iconsSection li a {
+  color: #fff;
+  font-size: 2em;
+}
+
+.iconsSection li a:hover {
+  color: #ff6b00;
+}
+
 .works {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0;
+  padding: 77px 0;
   gap: 80px;
 }
 
@@ -371,22 +406,49 @@ header {
   left: 16px;
 }
 
+.coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-skillset {
   color: #fff;
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
 }
 
+button {
+  border-radius: 100px;
+}
+
+button:hover {
+  background-color: #3e1a00;
+}
+
 .card-btn {
   border: 0;
   height: 48px;
   background: #ff6b00;
+  cursor: pointer;
   color: #fff;
+  box-shadow: #4a4a4a 0 9px 12px 0;
 }
+
+/*  Cards container css  */
 
 .missionCard-container {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  background: linear-gradient(to bottom right, #cc4c0200, #ff840a);
+  top: -13rem;
+}
+
+.cards-sctn {
+  height: fit-content;
+  top: 12em;
+  position: relative;
 }
 
 .about {
@@ -394,7 +456,7 @@ header {
   background-image: url(img/Frame.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 24%;
+  background-position-y: -20%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -434,6 +496,16 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.rsm-btn button:hover {
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #733101;
+}
+
+.rsm-btn {
+  margin-right: 220px;
 }
 
 .about-breaker {
@@ -496,18 +568,17 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 10px;
-  padding: 18px;
 }
 
 .technologies-header {
-  font-size: 2em;
+  font-size: 39px;
+  text-align: center;
 }
 
 .tech-icon {
-  width: 14%;
-  height: 5em;
-  background-color: #fdfdfdb8;
+  width: 17%;
+  height: 4em;
+  background-color: #5d5656bd;
   border-radius: 18px;
 }
 
@@ -547,17 +618,15 @@ header {
   justify-content: space-around;
   margin-top: 2%;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .counter-section {
-  background-color: #091e42;
-  display: flex;
-  padding: 1%;
-  border-radius: 3%;
-  color: #fff;
-  align-items: center;
-  flex-direction: column-reverse;
-  gap: 14px;
+  font-style: italic;
+  text-align: center;
+  box-shadow: #4a4a4a 0 9px 12px 0;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .contact-text {
@@ -605,18 +674,12 @@ fieldset {
 }
 
 .Submit-btn {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border: 0;
   padding: 12px;
   margin-top: 24px;
-  margin-left: 98px;
-  margin-right: 98px;
-  gap: 10px;
   background-color: #ff6b00;
   color: #fff;
-  width: 107px;
 }
 
 .form-breaker {
@@ -626,7 +689,20 @@ fieldset {
 }
 
 .footer {
-  margin: 10% 22%;
+  margin: 4% 3%;
+  display: ruby-text;
+}
+
+.footerIcons li {
+  font-size: 2em;
+}
+
+.footerIcons li a {
+  color: #000;
+}
+
+.footerIcons li a:hover {
+  color: #ff6b00;
 }
 
 .footerIcons {
@@ -644,17 +720,26 @@ fieldset {
   left: 120px;
   top: 21px;
   border-radius: 10px;
-  margin: auto 27%;
+  margin: auto 36%;
+  border-radius: 13px;
 }
 
 .drop-down {
-  position: absolute;
   display: flex;
-  display: none;
+  display: block;
   flex-direction: column;
   background-color: #3c3a39;
-  width: 100%;
-  height: 100%;
+  height: 4em;
+  width: -webkit-fill-available;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10008;
+  color: #fff;
+}
+
+.dropdown-menu {
+  display: contents !important;
 }
 
 #close-nav {
@@ -662,20 +747,30 @@ fieldset {
   display: flex;
 }
 
-.menu-link {
-  color: #fff5e1;
+.menu-list {
   display: flex;
+  justify-content: space-around;
+  height: 2em;
+  align-items: baseline;
+  gap: 40px;
+}
+
+.menu-link:hover {
+  background-color: #ff6b00;
+  border-radius: 40px;
+  padding: 2px;
+}
+
+.menu-link a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  letter-spacing: 0;
-  text-align: left;
-  text-decoration: none;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  font-size: 16px;
+}
+
+.menu-link a:hover {
+  display: ruby;
 }
 
 #menu-close {
@@ -683,16 +778,6 @@ fieldset {
   text-align: end;
   padding: 4px;
   height: 14px;
-}
-
-.dropdown-menu {
-  padding: 13px;
-  display: contents !important;
-}
-
-.dropdown-menuShow {
-  display: block;
-  z-index: 3;
 }
 
 /* Styles for the popup */
@@ -703,6 +788,7 @@ fieldset {
   cursor: pointer;
 }
 
+/* Modal Content */
 #modalOverlay {
   display: none;
   position: fixed;
@@ -725,17 +811,28 @@ fieldset {
   line-height: 44px;
 }
 
+#modalTechnologies {
+  display: flex;
+  gap: 10px;
+}
+
+#modalTechnologies li {
+  border: 1px solid #f55900;
+  padding: 5px;
+}
+
 #modalContent {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   background-color: #fff;
-  padding: 20px;
+  padding: 8px;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 77%;
   transform: translate(-50%, -50%);
+  overflow: scroll;
+  flex-direction: column;
 }
 
 .project-img {
@@ -744,14 +841,14 @@ fieldset {
 
 #modalImage {
   display: block;
-  height: 26em;
+  height: 15em;
 }
 
 #closeModalBtn {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: 32px;
   cursor: pointer;
 }
 
@@ -788,12 +885,17 @@ fieldset {
 #linkflex a {
   background: #ff6b00;
   width: 125px;
-  height: 24px;
+  height: 40px;
   padding: 10px;
   color: #fff;
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+#linkflex a img {
+  width: 17px;
+  height: 17px;
 }
 
 .errMsgAdd {
@@ -826,6 +928,14 @@ fieldset {
   padding-top: 33px;
 }
 
+.recent-works h1 {
+  font-size: 39px;
+  font-family: 'Poppins';
+  color: #000;
+  font-variant: all-small-caps;
+  font-weight: bolder;
+}
+
 /* .img-fluid {
   width: -webkit-fill-available;
   height: auto;
@@ -834,6 +944,7 @@ fieldset {
 .icons-sctn {
   display: flex;
   gap: 20px;
+  margin: 13px 1px;
 }
 
 .fas {
@@ -841,8 +952,8 @@ fieldset {
 }
 
 .icons-prof {
-  border-radius: 18%;
-  padding: 5px;
+  border-radius: 28%;
+  padding: 16px;
   background-color: #000;
 }
 
@@ -868,6 +979,12 @@ fieldset {
   font-family: serif;
 }
 
+.prof-quote {
+  font-style: italic;
+  text-align: center;
+  font-palette: normal;
+}
+
 p {
   font-family: 'Poppins', Times;
   font-weight: 100;
@@ -880,13 +997,11 @@ p {
 }
 
 .section-content h2 {
-  font-family: emoji, sans-serif;
-  font-weight: 550;
-  padding: 20px 0 12px 0;
-}
-
-h1 {
-  font: caption;
+  font-family: 'Poppins';
+  font-weight: bold;
+  padding: 8px 0 3px 0;
+  font-size: 2em;
+  font-variant: all-small-caps;
 }
 
 .section-content h1 {
@@ -895,21 +1010,6 @@ h1 {
 
 .btn {
   background-color: #ff6b00;
-}
-
-.about-btn button {
-  background-color: #ff6b00;
-  padding: 10px;
-  position: absolute;
-  right: 20px;
-  border-radius: 250%;
-  animation: btn-slide 4s ease-in-out;
-}
-
-.about-btn button:hover {
-  padding: 20px;
-  border-radius: 200%;
-  cursor: pointer;
 }
 
 .article-card {
@@ -962,7 +1062,8 @@ h1 {
 }
 
 .prjct-img {
-  width: 220px;
+  width: 120px;
+  height: 5rem;
 }
 
 .space-video-container {
@@ -976,7 +1077,7 @@ h1 {
 
 .programming-icon {
   position: absolute;
-  transform: translate(2px, -120%);
+  transform: translate(2px, -118%);
   color: #fff;
   padding: 10px;
 }
@@ -987,25 +1088,29 @@ h1 {
 
 .view-more-projects {
   position: relative;
-  left: 38%;
-  padding: 10px;
+  left: 34%;
+  padding: 15px;
   margin: 20px;
-  border-radius: 10%;
+  border-radius: 12px;
+  width: 16%;
+  height: auto;
+  display: block;
 }
 
 .bookings {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   background-color: #3c3a39;
 }
 
 .book {
-  color: #7bff00;
-  background-color: #091e42;
+  color: #ff6b00;
+  background-color: #020a01;
   text-align: center;
-  padding: 2px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 31px;
 }
 
 .book:hover {
@@ -1013,14 +1118,65 @@ h1 {
   color: #000;
 }
 
+.blog-link {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-link a {
+  height: 2em !important;
+  padding: 10px;
+}
+
+.company-brands {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
+  .calendly-badge-widget {
+    bottom: 20px !important;
+    right: -383px !important;
+    width: 41%;
+  }
+
+  .bookings {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-link a {
+    font-size: 30px;
+  }
+
+  .view-more-projects {
+    display: block !important;
+    width: fit-content;
+  }
+
   .space-video-container video {
     width: 100%;
   }
 
+  .drop-down {
+    display: block;
+    z-index: 9999;
+    width: 50%;
+    left: 22em;
+    border-radius: 61px;
+  }
+
+  .cosection {
+    justify-content: center;
+  }
+
   .technologies-header {
     font-size: 4em;
-    line-height: 2;
+    line-height: 1;
+  }
+
+  .tech-icon {
+    width: 13%;
+    height: 5em;
   }
 
   .programming-icon {
@@ -1046,11 +1202,46 @@ h1 {
   }
 
   .missionCard-container {
-    width: 40%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    right: -28%;
+    bottom: 263px;
+    background: linear-gradient(to bottom right, #cc4c0200, #ff840a);
+    height: 47em;
+  }
+
+  #services-pointer {
+    color: #f55900;
+    position: absolute;
+    z-index: 9999;
+    font-size: 4em;
+    top: 29%;
+    right: 48%;
+    animation: heartbeat 1s ease-in-out infinite alternate;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scaleX(1);
+    }
+
+    25% {
+      transform: scaleX(0.8);
+    }
+
+    50% {
+      transform: scaleX(1);
+    }
+
+    75% {
+      transform: scale(1.8);
+    }
+
+    100% {
+      transform: scaleX(2);
+    }
   }
 
   .blog-part {
@@ -1082,6 +1273,16 @@ h1 {
     background-color: #000;
   }
 
+  .prof-icons a {
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .prof-icons a:hover {
+    color: #ff6b00;
+    font-size: 2em;
+  }
+
   .brands img {
     width: 11%;
     height: 6em;
@@ -1100,8 +1301,8 @@ h1 {
     position: absolute;
     top: 0;
     left: -53px;
-    width: 100%;
-    height: 42%;
+    width: 93%;
+    height: 32%;
     border-radius: 81%;
     border: 49px solid transparent;
     animation: borderRotate 10s linear infinite alternate;
@@ -1187,6 +1388,18 @@ h1 {
     align-items: center;
   }
 
+  .cards-sctn {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    position: relative;
+    left: 55%;
+    gap: 6px;
+    top: 6em;
+  }
+
   .card {
     background-color: #1c1a19d4;
     border-radius: 12px;
@@ -1195,8 +1408,6 @@ h1 {
     width: 40%;
     height: 10em;
     position: relative;
-    top: 6px;
-    right: -465px;
     animation: 3s card-slide;
   }
 
@@ -1223,10 +1434,17 @@ h1 {
 
   .nav-link {
     display: flex;
+    gap: 10px;
     flex-direction: row;
     color: #fff;
     flex-wrap: nowrap;
     align-items: baseline;
+    position: fixed;
+    top: 86%;
+    left: 37%;
+    width: 23%;
+    background-color: #ffff;
+    z-index: 9999;
   }
 
   .navbtn {
@@ -1234,8 +1452,17 @@ h1 {
     color: #fff;
   }
 
+  .navbtn:hover {
+    background-color: #ff6b00;
+    border-radius: 100px;
+  }
+
   nav {
-    margin-right: 47%;
+    margin-right: 25%;
+    width: 48%;
+    background-color: black;
+    height: auto;
+    border-radius: 87px;
   }
 
   .mission-cards {
@@ -1259,7 +1486,7 @@ h1 {
   }
 
   .container {
-    width: 327px;
+    width: 403px;
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -1307,8 +1534,6 @@ h1 {
   .recent-project {
     display: flex;
     flex-direction: row;
-    margin-left: 17%;
-    margin-right: -17%;
   }
 
   .right-block {
@@ -1338,6 +1563,7 @@ h1 {
 
   .card-btn {
     display: none;
+    cursor: pointer;
     transition: background-color 0.5s ease;
   }
 
@@ -1429,6 +1655,9 @@ h1 {
   .Submit-btn {
     margin-left: 0;
     margin-top: 24px;
+    width: 88px;
+    height: 25px;
+    display: block;
   }
 
   .ficons {
@@ -1444,8 +1673,6 @@ h1 {
   }
 
   .footer {
-    margin: 1% 20% 1%  10%;
-    margin: 1% 20% 1% 10%;
     display: flex;
     align-content: center;
     justify-content: space-between;
