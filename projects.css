@@ -14,6 +14,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 16px;
+
 }
 
 .search-link {
@@ -21,7 +23,15 @@
   gap: 10px;
   flex-wrap: nowrap;
   align-items: baseline;
-  padding: 2px;
+  padding: 10px;
   background-color: #ffff;
   z-index: 9999;
+  margin: 1px;
 }
+
+.searchbar h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-variant: all-small-caps;
+  text-decoration: underline;
+} 

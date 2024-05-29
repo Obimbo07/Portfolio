@@ -25,6 +25,15 @@
   font-weight: 800 !important;
 }
 
+.profile-header {
+  text-align: center;
+}
+
+.profile-header h1 {
+  font-size: 4em;
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   #certificates {
     display: flex;

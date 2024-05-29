@@ -7,6 +7,7 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing:unset !important;
 }
 
 /*
@@ -25,8 +26,8 @@ header {
 
 .calendly-badge-widget {
   bottom: 78px !important;
-  right: 41px !important;
-  width: 41%;
+  right: 4px !important;
+  width: 34%;
 }
 
 li {
@@ -455,7 +456,7 @@ button:hover {
   background-image: url(img/Frame.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 24%;
+  background-position-y: -20%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -673,18 +674,12 @@ fieldset {
 }
 
 .Submit-btn {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border: 0;
   padding: 12px;
   margin-top: 24px;
-  margin-left: 98px;
-  margin-right: 98px;
-  gap: 10px;
   background-color: #ff6b00;
   color: #fff;
-  width: 107px;
 }
 
 .form-breaker {
@@ -739,7 +734,7 @@ fieldset {
   padding: 10px;
   position: fixed;
   bottom: 0;
-  z-index: 9999;
+  z-index: 10008;
   color: #fff;
 }
 
@@ -835,7 +830,6 @@ fieldset {
   left: 50%;
   width: 77%;
   transform: translate(-50%, -50%);
-  height: 53em;
   overflow: scroll;
   flex-direction: column;
 }
@@ -1093,10 +1087,13 @@ p {
 
 .view-more-projects {
   position: relative;
-  left: 38%;
-  padding: 10px;
+  left: 34%;
+  padding: 15px;
   margin: 20px;
-  border-radius: 10%;
+  border-radius: 12px;
+  width: 16%;
+  height: auto;
+  display: block;
 }
 
 .bookings {
@@ -1135,6 +1132,12 @@ p {
 }
 
 @media (min-width: 768px) {
+  .calendly-badge-widget {
+    bottom: 20px !important;
+    right: -383px !important;
+    width: 41%;
+  }
+
   .bookings {
     display: flex;
     flex-direction: row;
@@ -1156,7 +1159,7 @@ p {
     display: block;
     z-index: 9999;
     width: 50%;
-    left: 20em;
+    left: 22em;
     border-radius: 61px;
   }
 
@@ -1600,6 +1603,9 @@ p {
     margin: 5% 57% 0% 6%;
     width: 87%;
   }
+  .view-more-projects {
+    width: fit-content;
+  }
 
   .tools-list {
     display: flex;
@@ -1650,6 +1656,9 @@ p {
   .Submit-btn {
     margin-left: 0;
     margin-top: 24px;
+    width: 88px;
+    height: 25px;
+    display: block;
   }
 
   .ficons {
